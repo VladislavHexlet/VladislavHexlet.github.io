@@ -1,13 +1,8 @@
-var http = require('http');
-var fs = require('fs');
 
-fs.readFile('/index.html', function (err, data) {
-  var server = http.createServer(function (request, response) {
-    // content-length
-    response.write(data);
-    response.end();
-  })
-
-  var port = process.env.PORT || 3000;
-  server.listen(port);
-});
+var static = require('node-static');
+var file = new static.Server();
+require('http').createServer(function(request, response) {
+  request.addListener('end', function() {
+    file.serve(request, response);
+  }).resume();
+}).listen(process.env.PORT || 4500);
