@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="24px" height="5px" viewBox="0 0 24 5" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>arrow-right</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M19,2 L19,0 L24,2.5 L19,5 L19,3 L0,3 L0,2 L19,2 Z" id="path-1"></path>
+    </defs>
+    <g id="Home-black-(2)" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-425.000000, -501.000000)">
+        <g id="z-copy" transform="translate(425.000000, 501.000000)">
+            <g id="Rectangle-2">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <use id="Mask" fill="#FFFFFF" xlink:href="#path-1"></use>
+            </g>
+        </g>
+    </g>
+</svg>

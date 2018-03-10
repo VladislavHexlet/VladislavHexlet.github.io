@@ -1,0 +1,821 @@
+/* * {
+  font-family: 'Work Sans', sans-serif !important;
+  font-weight: 400;
+}
+
+*/
+
+/*font-family: 'droid_serifregular', Arial, sans-serif;*/
+
+body {
+    overflow-x: hidden !important;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  background: #030303;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.5em;
+  color: #141315;
+}
+
+
+svg {
+  vertical-align: middle;
+}
+
+p {
+  font-family: 'droid_serifregular', Arial, sans-serif;
+}
+
+h1, h2, h3 {
+  font-family: 'Work Sans', sans-serif !important;
+}
+
+.container-fluid {
+  margin-right: 5%;
+  margin-left: 5%;
+/* padding-left: 100px; */
+/* padding-right: 100px; */
+
+}
+
+
+.hero-section {
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size:cover;
+  background-attachment: fixed;
+  height:100vh;
+  background:
+  linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.8)
+    )
+  /* url('https://images.unsplash.com/photo-1449247613801-ab06418e2861?ixlib=rb-0.3.5&s=809d2fd89caa78e8a9652faf3e79b3e4&auto=format&fit=crop&w=1651&q=80')*/;
+
+}
+
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  color: #FFFFFF;
+  transform: translate(-50%, -50%);
+  margin: 0;
+
+}
+
+.hero-title {
+  font-family: 'droid_serifbold', Arial, sans-serif !important;
+  font-size: 2em;
+  letter-spacing: 1.5px;
+  margin-bottom: 0;
+}
+
+.hero-subtitle {
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #666666;
+  letter-spacing: 2px;
+  margin-bottom: 0;
+}
+
+.hero-des {
+  letter-spacing: 0.5px;
+  display: none;
+
+}
+
+.logo {
+  float: left;
+}
+
+header {
+  margin-top: 50px;
+  background: transparent;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  transition: top 0.2s ease-in-out;
+  z-index: 2;
+
+}
+
+.nav-up {
+    top: -100px;
+}
+
+.navigation-bar {
+  margin: 24px 60px;
+  height: 40px;
+}
+
+.navigation-bar ul {
+  display: inline-block;
+  text-align: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  vertical-align: top;
+  text-align: center;
+}
+
+.nav-menu {
+  float: right;
+}
+
+.nav-menu a {
+  margin-left: 20px;
+}
+
+
+
+li a {
+  display: inline-block;
+  float: left;
+  padding: 22px;
+  text-decoration: none;
+  color: #666666;
+}
+
+a {
+  /* line-height: 40px; */
+  vertical-align: middle;
+  text-align: center;
+  text-decoration: none;
+  color: #666666;
+}
+
+.col-md-1 {
+  text-align: center;
+}
+
+/* Portfolio */
+.project {
+  margin-top: 300px;
+
+}
+
+.project-title h2 {
+
+  top: 0px;
+  line-height: 1em;
+  font-size: 1.5em;
+  font-weight: 400;
+}
+
+.project-title {
+  min-width: 500px;
+  position: absolute;
+  /*border: 1px solid rgba(255, 255, 255, 0.3);*/
+  padding: 20px 40px 20px 40px;
+  font-size: 2em;
+  z-index: 30;
+  color: white;
+  margin-left: 50%;
+  margin-top: 2%;
+
+}
+
+#neuron-cover {
+  position: relative;
+}
+
+.left-shift {
+  margin-left: 12%;
+}
+
+.right-shift {
+  margin-left: 42%;
+}
+
+.pretitle {
+  opacity: 0;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: #6F7171;
+  font-weight: 400;
+}
+
+.project-title .first-title {
+  margin-top: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.first-title,
+.second-title {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+. {
+  margin-top: 30px;
+}
+
+.but-text {
+  font-size: 0.5em;
+  color: #FFFFFF;
+  font-weight: 300;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* Project Images */
+
+.thomas-image,
+.neuron-image,
+.planeme-image,
+.escapes-image {
+  max-width: 100%;
+  height: 486px;
+}
+
+.neuron-image {
+  opacity: 0;
+  background: url('../images/neuron.png') no-repeat;
+  margin-left: 350px;
+  background-size: contain;
+}
+
+.thomas-image {
+  opacity: 0;
+  background: url('../images/thomas@2x.png') no-repeat;
+  margin-left: 150px;
+  background-size: contain;
+}
+
+.planeme-image {
+  opacity: 0;
+  background: url('../images/thomas@2x.png') no-repeat;
+  margin-left: 350px;
+  background-size: contain;
+}
+
+.escapes-image {
+  opacity: 0;
+  background: url('../images/thomas@2x.png') no-repeat;
+  margin-left: 150px;
+  background-size: contain;
+}
+
+.box-left {
+  opacity: 0;
+  position: absolute;
+  padding: 20px 40px 20px 40px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  margin-left: 12%;
+  min-height: 290px;
+  min-width: 150px;
+  margin-top: 2%;
+
+}
+
+.box-right {
+  opacity: 0;
+  position: absolute;
+  padding: 20px 40px 20px 40px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  margin-left: 42%;
+  min-height: 290px;
+  min-width: 50px;
+  margin-top: 2%;
+}
+
+.icon-right {
+  opacity: 0;
+  vertical-align: middle;
+  margin-left: 20px;
+}
+
+.but-block {
+  display: flex;
+}
+
+
+/* Box Animation */
+
+.b-left-animated {
+  opacity: 1;
+  min-height: 290px;
+  min-width: 500px;
+  animation-duration: 2s;
+  animation-name: scaleLeft, fadeInLeftBox;
+  /* animation-timing-function: linear; */
+}
+
+.b-right-animated {
+  opacity: 1;
+  min-height: 290px;
+  min-width: 450px;
+  animation-duration: 2s;
+  animation-name: scaleRight, fadeInLeftBox;
+
+}
+
+@keyframes fadeInLeftBox {
+    0% {
+      opacity: 0;
+      animation-timing-function: cubic-bezier(.16,0,.64,1);
+      -webkit-transform: translateX(-50px);
+      transform: translateX(-70px);
+    }
+
+    63%, 100% {
+      opacity: 1;
+      animation-timing-function: ease-out;
+      -webkit-transform: translateX(0);
+      transform: translateX(0);
+    }
+  }
+
+@keyframes scaleLeft {
+  0% {
+    animation-timing-function: cubic-bezier(.16,0,.64,1);
+    min-width: 50px;
+  }
+
+  63%, 100% {
+    animation-timing-function: ease-in;
+    min-width: 500px;
+  }
+}
+
+@keyframes scaleRight {
+  0% {
+    animation-timing-function: cubic-bezier(.16,0,.64,1);
+    min-width: 150px;
+  }
+
+  63%, 100% {
+    animation-timing-function: ease-in;
+    min-width: 450px;
+  }
+}
+
+/* @keyframes movi {
+  0% {
+    animation-timing-function: cubic-bezier(.16,0,.64,1);
+    transform: translateX(-100px);
+  }
+  63% {
+    animation-timing-function: ease-out;
+    transform: translateX(0);
+  }
+} */
+
+
+/* Home Animation
+
+/* Project Cover */
+
+.but-block {
+  margin-top: 10%;
+}
+
+.inner-but {
+  opacity: 0;
+  /* clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%); */
+  /* transform: translateX(-150px); */
+
+}
+
+.view-but {
+  clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
+}
+
+.first-title {
+  opacity: 0;
+  -webkit-animation-duration: 0.2s;
+  /* -webkit-animation-delay: 1s; */
+  -webkit-animation-iteration-count: 1;
+}
+
+.second-title {
+  opacity: 0;
+  -webkit-animation-duration: 0.2s;
+  /* -webkit-animation-delay: 1s; */
+  -webkit-animation-iteration-count: 1;
+}
+
+@keyframes fadeIn {
+	from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+	}
+	to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+	}
+}
+
+.neuron-image.current {
+    opacity: 1;
+    animation-name: fadeIn;
+    -webkit-animation-name: fadeIn;
+    animation-duration: 3s;
+    -webkit-animation-duration: 3s;
+    visibility: visible !important;
+}
+
+@keyframes fadeIn {
+    0% {
+        animation-timing-function: ease-out;
+        opacity: 0.0;
+    }
+
+    100% {
+        animation-timing-function: ease-in;
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0.0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.fadeInDown {
+  opacity: 0;  /* make things invisible upon start */
+  -webkit-animation:fadeInDown ease-out 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+  -moz-animation:fadeInDown ease-out 1;
+  animation:fadeInDown ease-out 1;
+
+  -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+  -moz-animation-fill-mode:forwards;
+  animation-fill-mode:forwards;
+
+  animation-delay: 0.5s;
+
+  -webkit-animation-duration:0.8s;
+  -moz-animation-duration:0.8s;
+  animation-duration:0.8s;
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -50%, 0);
+    transform: translate3d(0, -50%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(-50%, 0, 0);
+    transform: translate3d(-50%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.fadeInLeft {
+  opacity: 0;  /* make things invisible upon start */
+  -webkit-animation:fadeInLeft ease-out 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+  -moz-animation:fadeInLeft ease-out 1;
+  animation:fadeInLeft ease-out 1;
+
+  -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+  -moz-animation-fill-mode:forwards;
+  animation-fill-mode:forwards;
+
+  animation-delay: 0.5s;
+
+  -webkit-animation-duration:0.8s;
+  -moz-animation-duration:0.8s;
+  animation-duration:0.8s;
+}
+
+.clip-polygon {
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+.image-animated {
+  opacity: 1;
+  animation-duration: 0.8s;
+  animation-name: clipMoveUp, movement, fadeIn;
+  animation-iteration-count: 1;
+}
+
+@keyframes clipMoveUp {
+  0% { -webkit-clip-path: polygon(0 68%, 100% 69%, 100% 100%, 0 100%);
+        clip-path: polygon(0 70%, 100% 70%, 100% 100%, 0 100%);
+      }
+
+  100% { -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+          clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); }
+}
+
+@keyframes movement {
+  0% {
+    transform: translate(0px, 115px);
+    animation-timing-function:ease-in-out;
+  }
+
+  100% {
+    animation-timing-function:cubic-bezier(0,.31,.78,.6);
+    /* animation-timing-function:cubic-bezier(0,.31,.78,.6); */
+  }
+
+}
+
+
+
+
+/* Footer Style */
+
+footer {
+  text-align: center;
+  margin-top: 150px;
+  margin-bottom: 50px;
+}
+
+.email {
+  font-family: 'droid_serifbold', Arial, sans-serif;
+  font-size: 1.5em;
+  color: #FFFFFF;
+
+}
+
+.email-des {
+  color: #666666;
+  font-family: 'Work Sans', Arial, sans-serif;
+}
+
+/* Responsiveness */
+
+@media only screen and (max-width: 598px) {
+  .project {
+    margin-top: 150px;
+  }
+
+  .left-shift {
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+
+  .project-title {
+    padding: 0;
+    margin: auto;
+  }
+
+  .first-title,
+  .second-title {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .project-title .first-title {
+    margin-top: 10px;
+    margin-bottom: 0;
+  }
+
+
+  .view-but {
+    margin-top: 0;
+
+  }
+
+  .project-title h2 {
+    line-height: 1.5;
+    font-size: 1.5em;
+  }
+
+  .but-text {
+    -webkit-transform: matrix(1, 0, 0, 1, 0, 0);
+    font-size: 10px;
+  }
+
+  .neuron-image {
+    margin-left: 0;
+  }
+
+  .pretitle{
+    display: none;
+  }
+
+}
+
+@media only screen and (min-width: 599px) and (max-width: 768px) {
+
+  .left-shift {
+    margin-left: 0;
+  }
+
+  .col-sm-6 {
+    width: 100%;
+
+  }
+
+  .neuron-image {
+    margin-left: 0;
+  }
+
+  .project-title {
+    bottom: 40%;
+  }
+
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1070px) {
+
+  .project-title {
+    bottom: 40%;
+  }
+
+  .project-title {
+    margin-top: 60px;
+  }
+
+  .left-shift {
+    margin-left: 100px;
+  }
+
+  .neuron-image {
+    width: 70%;
+
+  }
+
+  .neuron-image {
+    margin-left: 250px;
+  }
+
+}
+
+@media only screen and (min-width: 1071px) and (max-width: 1199px) {
+
+  .neuron-image {
+    width: 60%;
+
+  }
+
+  .neuron-image {
+    margin-left: 250px;
+  }
+
+}
+
+@media only screen and (min-width: 1200px){
+
+
+  .neuron-image {
+    width: 50%;
+    margin-left: 350px;
+  }
+
+}
+
+
+/* Neuron Project page */
+
+#nav-projects {
+  position: unset;
+}
+
+#neuron {
+  background: #FFFFFF !important;
+}
+
+.nav-back {
+  /* padding-top: 50px; */
+}
+
+.close {
+  float: right;
+}
+
+.top-des {
+  margin-top: 5%;
+  min-height: 550px;
+}
+
+.top-text {
+  max-width: 500px;
+  margin-left: 10%;
+  line-height: 2em;
+}
+
+.main-title {
+  font-size: 2.5em;
+  margin: 0;
+}
+
+.sub-text {
+  margin-top: 5%;
+  line-height: 1.5em;
+}
+
+.neuron-top-image {
+  position: absolute;
+  max-width: 100%;
+  top: 20%;
+  right: 15%;
+}
+
+.hero-section-neuron {
+  width: 100%;
+  background: #1F82FD;
+  min-height: 1024px;
+}
+
+.rectangle-black {
+
+}
+
+/* Service List Style*/
+
+ul.service-list {
+  font-weight: 400;
+  color: #98C6FF;
+  text-transform: uppercase;
+  line-height: 4em;
+  letter-spacing: 1.5px;
+  font-size: 12px;
+}
+
+#block-center {
+  margin: auto;
+  max-width: 994px;
+  padding-top: 5%;
+}
+
+.rectangle-black {
+  background-image: url('images/neuron-brand.png');
+  /* background: url('images/neuron-brand.png') no-repeat;
+  background-size: contain; */
+  margin: 0;
+  max-width: 2280px;
+  height: 100%;
+}
+
+#neuron-brand {
+  max-width: 994px;
+  max-height: 619px;
+  margin: auto;
+}
+
+#neuron-brand img {
+  max-width: 994px;
+  max-height: 619px;
+  border: 60px solid black;
+  border-radius: 50px;
+}
+
+img {
+  object-fit: contain;
+}
+
+
+/* Text Style */
+
+.headline {
+  color: #141315;
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 2px;
+  font-weight: 500;
+}
+
+
+.text {
+
+  line-height: 2em;
+  -webkit-font-smoothing: antialiased;
+
+}
+
+.white {
+  color: #E4F0FE;
+}
+
+.pg-section {
+  margin-top: 10%;
+}
