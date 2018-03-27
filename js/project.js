@@ -3,7 +3,9 @@ $(function() {
   $(window).on('load', function() {
     $('body').removeClass('lock-screen');
     //$('#loader').remove();
-    $('#loader').fadeOut(600);
+    setTimeout(function () {
+      $('#loader').fadeOut(600)
+    }, 1000);
   });
 
   var animate = function(id, triggerProperty) {
