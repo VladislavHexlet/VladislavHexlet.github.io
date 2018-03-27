@@ -1,4 +1,5 @@
 // When the DOM is ready
+
 $(function() {
 
   $('body').removeClass('lock-screen');

@@ -1,4 +1,10 @@
 $(function() {
+
+  (window).load(function() {
+    $('body').removeClass('lock-screen');
+    $('#loader').remove();
+  })
+
   var animate = function(id, triggerProperty) {
     var Controller = new ScrollMagic.Controller();
 
@@ -11,10 +17,6 @@ $(function() {
     .addTo(Controller);
   };
 
-  console.log(1)
-  $('body').removeClass('lock-screen');
-  $('#loader').remove();
-  
   // var appearPage = function(id) {
   //   console.log(id)
   //   console.log($(id).css("opacity" ))
@@ -45,8 +47,6 @@ $(function() {
   }, function(e) {
     $('.icon-back').css('margin-left', '0');
   });
-
-  console.log(2);
   //var tweenText = TweenMax.to(elementId + ' .first-title', 0.3, {css:{className:"+=fadeInDown"}});
   //setTimeout(blockAppears, 0, '#top-text-element');
 
