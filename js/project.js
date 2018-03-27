@@ -1,5 +1,5 @@
 $(function() {
-  
+  console.log(1)
   $('body').removeClass('lock-screen');
   $('#loader').remove();
 
