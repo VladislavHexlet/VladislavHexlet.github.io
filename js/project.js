@@ -1,6 +1,6 @@
 $(function() {
 
-  (window).load(function() {
+  $(window).load(function() {
     $('body').removeClass('lock-screen');
     $('#loader').remove();
   })
