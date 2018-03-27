@@ -12,6 +12,8 @@ body {
 }
 
 
+
+
 html, body {
   height: 100%;
   margin: 0;
@@ -920,7 +922,7 @@ footer {
 /* Page loaded */
 
 #neuron_body {
-  opacity : 1;
+  opacity : 0;
   transition: opacity 2s;
   background-color: #ffffff;
 }
