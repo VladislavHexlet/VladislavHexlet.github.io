@@ -5,7 +5,7 @@ $(function() {
   $(window).on('load', function() {
     $('body').removeClass('lock-screen');
     //$('#loader').remove();
-    $('#loader').fadeOut('slow')
+    $('#loader').fadeOut(400)
   });
 
   var didScroll;
