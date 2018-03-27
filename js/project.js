@@ -1,8 +1,4 @@
 $(function() {
-  console.log(1)
-  $('body').removeClass('lock-screen');
-  $('#loader').remove();
-
   var animate = function(id, triggerProperty) {
     var Controller = new ScrollMagic.Controller();
 
@@ -14,6 +10,10 @@ $(function() {
     .setClassToggle(id, triggerProperty)
     .addTo(Controller);
   };
+
+  console.log(1)
+  $('body').removeClass('lock-screen');
+  $('#loader').remove();
 
   // var appearPage = function(id) {
   //   console.log(id)
