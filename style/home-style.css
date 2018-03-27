@@ -125,6 +125,10 @@ h1, h2, h3 {
 
 /* Home Bg */
 
+.homepage-hero-module {
+  height: 100vh;
+}
+
 .bg-container {
     position: relative;
     bottom: 0%;
@@ -132,8 +136,8 @@ h1, h2, h3 {
     height: 100%;
     width: 100%;
     overflow: hidden;
-    filter: grayscale(50%);
-    background: url('..images/hero-image.jpg') no-repeat center;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,1)), url('../images/hero-image.jpg') no-repeat center;
+    background-size: cover;
 }
 
 header {
