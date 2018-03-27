@@ -1,4 +1,8 @@
 $(function() {
+  
+  $('body').removeClass('lock-screen');
+  $('#loader').remove();
+
   var animate = function(id, triggerProperty) {
     var Controller = new ScrollMagic.Controller();
 
