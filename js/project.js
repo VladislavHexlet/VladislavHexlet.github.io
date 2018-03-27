@@ -45,6 +45,8 @@ $(function() {
   }, function(e) {
     $('.icon-back').css('margin-left', '0');
   });
+
+  console.log(2);
   //var tweenText = TweenMax.to(elementId + ' .first-title', 0.3, {css:{className:"+=fadeInDown"}});
   //setTimeout(blockAppears, 0, '#top-text-element');
 
