@@ -2,8 +2,13 @@
 
 $(function() {
 
-  $('body').removeClass('lock-screen');
-  $('#loader').remove();
+  $(window).on('load', function() {
+    $('body').removeClass('lock-screen');
+    //$('#loader').remove();
+    setTimeout(function () {
+      $('#loader').fadeOut('slow')
+    }, 1000);
+  });
 
   var didScroll;
   var lastScrollTop = 0;
