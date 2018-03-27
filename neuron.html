@@ -12,89 +12,185 @@
   <meta property="og:description" content="..."/>
   <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" title="text/css" href="style/home-style.css">
+  <link rel="stylesheet" title="text/css" href="style/responsiveness.css">
   <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,500,600,700" rel="stylesheet">
   <link rel="stylesheet" href="style/stylesheet.css" type="text/css" charset="utf-8" />
   <link rel="stylesheet" href="style/stylesheet2.css" type="text/css" charset="utf-8" />
   </head>
 
-  <body id="neuron">
+  <body id="neuron_body">
     <header id="nav-projects">
-      <div class="container-fluid nav-back">
+      <div class="container-fluid extra-pad-side nav-back">
         <div class="row">
-          <div class="col-md-6">
-            <a class="back" href="index.html">
-              <img src="icons/arrow-back.svg" alt="link-to-back">
+          <div class="col-xs-12 col-md-12">
+            <a class="back-link" href="index.html#neuron-cover">
+              <div class="t-inline icon-back">
+                  <img src="icons/arrow-back-light.svg" alt="back link to home">
+              </div>
+              <div class="t-inline b-link">
+                  <p class="text white t-inline">Back</p>
+              </div>
             </a>
-          </div>
-          <div class="col-md-6">
-            <a class="close" href="index.html">Close</a>
           </div>
         </div>
       </div>
     </header>
     <!-- Hero-image -->
-    <div class="container-fluid">
-      <div class="row top-des">
-        <div class="col-sm-8">
-          <div class="top-text">
-            <h3 class="pretitle">UX/UI Design</h3>
-            <h2 class="main-title">Neuron App</h2>
-            <p class="sub-text">
-              Singapore has great infrastructure so a bike-sharing system is very popular in this city.
-              This case study is about how I approached to create a booking and tracking experience easier that need it for the rider as never.
-            </p>
+    <section class="container-fluid rel" id="neuron-hero-top-bg">
+      <div class="row top-des abt">
+        <div class="container-fluid">
+          <div class="col-xs-12 col-sm-12" id="neuron-text-intro">
+            <div class="top-text text white">
+              <h3 class="pretitle" id="top-pretitle">UX/UI Design</h3>
+              <h2 class="main-title">Neuron App</h2>
+              <p class="sub-text">
+                Singapore has great infrastructure so a bike-sharing system is very popular in this city.
+                This case study is about how I approached to create a booking and tracking experience easier that need it for the rider as never.
+              </p>
+            </div>
           </div>
         </div>
-        <div class="col-sm-4 neuron-top-image">
-          <img src="images/iPhone_6_plus_perspective_neuron.png">
+
+      </div>
+    </section>
+    <div class="fake-block"></div>
+    <!-- Project Description Start-->
+    <section class="wrapper">
+      <div class="container-fluid rel intro-desc" id="neuron-intro">
+        <div class="row">
+          <div class="container-fluid block-text-center">
+            <div class="col-sm-5">
+              <ul class="project-list">
+                <li class="project-list-item">Design Research</li>
+                <li class="project-list-item">Wireframing</li>
+                <li class="project-list-item">Prototyping</li>
+                <li class="project-list-item">UX/UI Design</li>
+                <li class="project-list-item">UI Animation</li>
+              </ul>
+            </div>
+            <div class="col-xs-12 col-sm-7">
+              <h3 class="headline white">The Challenge</h3>
+              <p class="text white">
+                Neuron brand already has several services by one brand, it has focused on another one.
+                We were tasked with design the modern and delightful iOS app for mobility sharing system so that the visual
+                style will be consistent with the general brand and will open new opportunities for Neuron’s system users.
+              </p>
+              <div class="pg-section">
+                <h3 class="headline white">The Problem</h3>
+                <p class="text white">
+                  The goal was to create a functional and complex app with delightful experience and
+                  allow users to be happy to share rides with friends and have rides for points.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="container-fluid" id="brand-section" >
+          <div class="row brand-image">
+            <div class="neuron-brand-image col-xs-12 col-md-12">
+              <!-- <img src="images/neuron-brand.png" alt="neuron-branding"> -->
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-    <!-- Project Description Start-->
-    <section class="hero-section-neuron">
-      <div class="container-fluid" id="block-center">
-        <div class="col-sm-5">
-          <ul class="service-list">
-            <li>Design Research</li>
-            <li>Wireframing</li>
-            <li>Prototyping</li>
-            <li>UX/UI Design</li>
-            <li>UI Animation</li>
-          </ul>
-        </div>
-        <div class="col-sm-7">
-          <h3 class="headline white">The Challenge</h3>
-          <p class="text white">
+      <div class="container-fluid block-center main-block">
+        <!-- Persona Block -->
+        <div class="col-xs-12 col-sm-12 centred-text extra-pad-top">
+          <h3 class="headline black">Personas</h3>
+          <p class="text black">
             Neuron brand already has several services by one brand, it has focused on another one.
             We were tasked with design the modern and delightful iOS app for mobility sharing system so that the visual
             style will be consistent with the general brand and will open new opportunities for Neuron’s system users.
           </p>
-          <div class="pg-section">
-            <h3 class="headline white">The Problem</h3>
-            <p class="text white">
-              The goal was to create a functional and complex app with delightful experience and
-              allow users to be happy to share rides with friends and have rides for points.
-            </p>
-          </div>
+        </div>
+        <div class="col-xs-12 col-sm-12 persona" id="neuron-personas"></div>
+        <!-- Competitors Block -->
+        <div class="col-xs-12 col-sm-12 centred-text extra-pad-top">
+          <h3 class="headline black">Competitor Audit</h3>
+          <ul class="text black">
+            <li>The competitor doesn't provide scanning QR code</li>
+            <li>Competitors don’t provide scooters for the users</li>
+            <li>Competitors don't have the "Book" device feature</li>
+            <li>Competitors don’t have a gamification approach</li>
+          </ul>
+        </div>
+        <div class="col-xs-12 col-sm-12 img-content com-audit"></div>
+        <!-- User Flow -->
+        <div class="col-xs-12 col-sm-12 centred-text extra-pad-top">
+          <h3 class="headline black">User Flow</h3>
+          <p class="text black">
+            I created a chart for User Flow based on the main features and the user’s needs.
+            To make booking the device easier and focus the user on finding a good place to have a ride from,
+            the user has an access to do this upon opening the app. The dashboard feature is one of the important
+            feature created to track the riding, that can be stopped whenever the user wants.
+          </p>
+        </div>
+        <div class="col-xs-12 col-sm-12 user-flow"></div>
+      </div>
+      <div class="container-fluid block-center">
+        <!-- Wireframing -->
+        <div class="col-xs-12 col-sm-12 centred-text extra-pad-top">
+          <h3 class="headline black">Wireframing</h3>
+          <p class="text black">
+            I created a chart for User Flow based on the main features and the user’s needs.
+            To make booking the device easier and focus the user on finding a good place to have a ride from,
+            the user has an access to do this upon opening the app. The dashboard feature is one of the important
+            feature created to track the riding, that can be stopped whenever the user wants.
+          </p>
         </div>
       </div>
-      <div class="container-fluid" id="neuron-brand" >
-        <div class="row">
-          <div class="col-md-12">
-            <img src="images/neuron-brand.png" alt="neuron-branding">
+      <div class="container-fluid">
+        <div class="col-xs-12 col-sm-12 wireframes"></div>
+        <div class="col-xs-12 col-sm-5 tab-shadow solutions">
+          <h3 class="headline black">Solutions</h3>
+          <ul class="text-list black">
+            <li class="text-list-item">The interactive map is the first upon opening the app.
+              This allows the user quickly book a device.</li>
+            <li class="text-list-item">The "book" feature implemented so that the user can
+              Cancel their booking after confirmation.</li>
+            <li class="text-list-item">The interactive map provides the user information about each docking point and free devices for booking.
+              It allows the user easily book device in any place of the city.</li>
+            <li class="text-list-item">The dashboard UI is created so that the user can easily track
+              the data about the ride and be confident on any device.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="container-fluid neuron-visual-desc">
+        <div class="container-fluid block-center">
+          <!-- Visual Design -->
+          <div class="col-xs-12 col-sm-12 centred-text extra-pad-top">
+            <h3 class="headline white">Visual Design</h3>
+            <p class="text white">
+              I created a chart for User Flow based on the main features and the user’s needs.
+              To make booking the device easier and focus the user on finding a good place to have a ride from,
+              the user has an access to do this upon opening the app. The dashboard feature is one of the important
+              feature created to track the riding, that can be stopped whenever the user wants.
+            </p>
           </div>
+
+        </div>
+        <div class="container-fluid extra-pad-bottom">
+          <div class="col-sm-12 col-xs-12 mockup-1"></div>
+          <div class="col-sm-12 col-xs-12 mockup-2"></div>
+        </div>
+
         </div>
       </div>
     </section>
 
-    <!-- Project Description End-->
 
-    <footer class="container-fluid">
-      <div class="row">
-        <p class="email">anna@annaprh.com</p>
-        <p class="email-des">Contact me for an appointment, a project, or a cup of coffee</p>
-      </div>
-    </footer>
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js"></script>
 
+    <!-- ScrollMagic -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.js"></script>
+
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="js/project.js"></script>
   </body>
 </html>

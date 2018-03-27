@@ -1,0 +1,283 @@
+
+/* Home Page */
+@media only screen and (max-width: 598px) {
+
+  /* p {
+    font-size: 0.85em;
+  } */
+
+
+
+  /* .extra-pad-top {
+
+  } */
+
+  .text {
+    font-size: 0.85em;
+  }
+
+  #nav-projects {
+    position: absolute;
+  }
+
+  .hero-title {
+    font-size: 1em;
+    line-height: 1em;
+  }
+
+  .project {
+    margin-top: 20%;
+  }
+
+  .top-des {
+    left: 0;
+
+  }
+
+  .project-title {
+    padding: 0;
+    margin: 5%;
+    font-size: 1em;
+    min-width: 250px;
+  }
+
+  .first-title,
+  .second-title {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .project-title .first-title {
+    margin-top: 5%;
+    margin-bottom: 0;
+  }
+
+  .view-but {
+    margin-top: 0;
+  }
+
+  .project-title h2 {
+    line-height: 1.5;
+  }
+
+  .but-text {
+    -webkit-transform: matrix(1, 0, 0, 1, 0, 0);
+    font-size: 10px;
+  }
+
+  .neuron-image, .thomas-image, .planeme-image, .escapes-image {
+    height: 200px;
+    margin-left: 0;
+  }
+
+  .pretitle, .box-left, .box-right, .fake-block {
+    display: none;
+  }
+
+  #neuron-hero-top-bg, #escapes-hero-top-bg {
+    position: relative;
+    height: 70vh;
+  }
+
+  /* Projects */
+
+  .main-block {
+    margin-top: 15%;
+  }
+
+  .sub-text {
+    margin-top: 10%;
+    line-height: 1.5em;
+  }
+
+  ul.project-list {
+    display: none;
+  }
+
+  div.solutions {
+    display: none;
+  }
+
+
+  div.neuron-brand-image {
+    padding: 0;
+    border: 30px solid black;
+    border-radius: 25px;
+    content: url(../images/neuron-brand.png);
+  }
+
+  .brand-image {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+
+  #neuron-brand {
+    margin-top: 25px;
+  }
+
+  .intro-desc {
+    min-height: 650px;
+  }
+
+  .main-block {
+    margin-top: 30%;
+  }
+
+  div.persona {
+    margin-top: 25px;
+  }
+
+  div.neuron-visual-desc > div.block-center {
+      padding-left: 0;
+      padding-right: 0;
+
+  }
+
+
+}
+
+@media only screen and (min-width: 599px) and (max-width: 768px) {
+
+
+  .box-left, .box-right {
+    display: none;
+  }
+
+  .left-shift, .right-shift {
+    margin-left: 0;
+  }
+
+  .col-sm-6 {
+    width: 100%;
+
+  }
+
+  .neuron-image, .thomas-image, .planeme-image, .escapes-image  {
+    margin-left: 0;
+  }
+
+  .top-des {
+    left: 0;
+
+  }
+
+  /* Neuron project */
+
+  #neuron-top-image {
+    display: none;
+  }
+
+  ul.project-list {
+    display: none;
+  }
+
+  .intro-desc {
+    min-height: 650px;
+  }
+
+  div.solutions {
+    display: none;
+  }
+
+  div.neuron-brand-image {
+    padding: 0;
+    border: 30px solid black;
+    border-radius: 25px;
+    content: url(../images/neuron-brand.png);
+  }
+
+  .brand-image {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+
+  .main-block {
+    margin-top: 30%;
+  }
+
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1070px) {
+
+  .project-title {
+    margin-top: 2%;
+  }
+
+  .right-shift, .box-right {
+    margin-left: 40%;
+  }
+
+  .left-shift, .box-left {
+    margin-left: 0;
+  }
+
+  .neuron-image, .thomas-image, .planeme-image, .escapes-image {
+    width: 70%;
+
+  }
+
+  .neuron-image, .planeme-image {
+    margin-left: 32%;
+  }
+
+  .thomas-image, .escapes-image {
+    margin-left: 0;
+  }
+
+/* Neuron project  */
+
+  div.solutions {
+    margin-top: 0;
+  }
+
+  div.neuron-brand-image {
+    padding: 0;
+    border: 30px solid black;
+    border-radius: 25px;
+    content: url(../images/neuron-brand.png);
+  }
+
+  .brand-image {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+
+  .main-block {
+    margin-top: 30%;
+  }
+
+  .intro-desc {
+    min-height: 800px;
+  }
+
+  div.solutions {
+    display: none;
+  }
+
+}
+
+@media only screen and (min-width: 1071px) and (max-width: 1199px) {
+
+  .neuron-image, .thomas-image, .planeme-image, .escapes-image  {
+    width: 60%;
+
+  }
+
+  .neuron-image {
+    margin-left: 250px;
+  }
+
+  /* Neuron Project */
+
+  div.solutions {
+    margin-top: 5%;
+  }
+
+}
+
+/* Neuron Project */
+
+@media only screen and (max-width: 992px) {
+
+
+}

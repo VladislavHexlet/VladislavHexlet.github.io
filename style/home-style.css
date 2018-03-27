@@ -11,53 +11,77 @@ body {
     overflow-x: hidden !important;
 }
 
+
 html, body {
   height: 100%;
   margin: 0;
   background: #030303;
-  font-family: 'Work Sans', sans-serif;
+  font-family: 'Work Sans', Arial, sans-serif;
   font-weight: 300;
   font-size: 16px;
   line-height: 1.5em;
   color: #141315;
 }
 
-
 svg {
   vertical-align: middle;
 }
 
-p {
+p, ul {
   font-family: 'droid_serifregular', Arial, sans-serif;
+  /* font-family: 'Work Sans', Arial, sans-serif; */
+
 }
 
 h1, h2, h3 {
-  font-family: 'Work Sans', sans-serif !important;
+  font-family: 'Work Sans', Arial, sans-serif;
+  /* font-family: 'droid_serifregular', Arial, sans-serif; */
 }
 
+
+.load {
+  opacity: 1 !important;
+  transition: opacity 0.8s;
+
+}
+
+
+
 .container-fluid {
-  margin-right: 5%;
-  margin-left: 5%;
-/* padding-left: 100px; */
-/* padding-right: 100px; */
+  /* margin-right: 5%;
+  margin-left: 5%; */
 
 }
 
 
 .hero-section {
-  width: 100%;
+  /* width: 100%;
+  background: linear-gradient(rgba(0,0,0,1), rgba(0,0,0,.5)), url('../images/hero-image.jpg') no-repeat;
   background-repeat: no-repeat;
   background-position: center;
   background-size:cover;
   background-attachment: fixed;
-  height:100vh;
-  background:
-  linear-gradient(
-      rgba(0, 0, 0, 0.5),
-      rgba(0, 0, 0, 0.8)
-    )
-  /* url('https://images.unsplash.com/photo-1449247613801-ab06418e2861?ixlib=rb-0.3.5&s=809d2fd89caa78e8a9652faf3e79b3e4&auto=format&fit=crop&w=1651&q=80')*/;
+  height:100vh; */
 
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  /* background-color: #000; */
+  overflow: hidden;
+}
+
+#hero-bg {
+  background-position: center center;
+  position: absolute;
+  background-size: cover;
+  /* background-image: url('../images/hero-image.jpg'); */
+  /* filter: grayscale(100%); */
+  top: -5%;
+  right: -5%;
+  bottom: -5%;
+  left: -5%;
+  width: 110%;
+  height: 110%;
 }
 
 .hero-text {
@@ -68,6 +92,7 @@ h1, h2, h3 {
   color: #FFFFFF;
   transform: translate(-50%, -50%);
   margin: 0;
+  z-index: 2;
 
 }
 
@@ -96,8 +121,52 @@ h1, h2, h3 {
   float: left;
 }
 
+/* Video Bg */
+
+.homepage-hero-module {
+    border-right: none;
+    border-left: none;
+    position: relative;
+}
+.no-video .video-container video,
+.touch .video-container video {
+    display: none;
+}
+.no-video .video-container .poster,
+.touch .video-container .poster {
+    display: block !important;
+}
+.video-container {
+    position: relative;
+    bottom: 0%;
+    left: 0%;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background: #000;
+}
+.video-container .poster img {
+    width: 100%;
+    bottom: 0;
+    position: absolute;
+}
+.video-container .filter {
+    z-index: 100;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.4);
+    width: 100%;
+}
+.video-container video {
+    position: absolute;
+    z-index: 0;
+    bottom: 0;
+}
+.video-container video.fillWidth {
+    width: 100%;
+}
+
 header {
-  margin-top: 50px;
+  padding-top: 50px;
   background: transparent;
   position: fixed;
   top: 0;
@@ -133,6 +202,21 @@ header {
 
 .nav-menu a {
   margin-left: 20px;
+  display: inline-block;
+  float: right;
+}
+
+.underLinks {
+  width: 100%;
+  height: 1px;
+  background-color: #ffffff;
+  transform: scaleX(0);
+
+}
+
+.container-fluid .row .nav-menu a:hover > .underLinks {
+  transition: transform 0.5s;
+  transform: scaleX(1);
 }
 
 
@@ -151,6 +235,16 @@ a {
   text-align: center;
   text-decoration: none;
   color: #666666;
+
+}
+
+a:hover {
+  /* line-height: 40px; */
+  vertical-align: middle;
+  text-align: center;
+  text-decoration: none;
+  color: #666666;
+
 }
 
 .col-md-1 {
@@ -159,7 +253,7 @@ a {
 
 /* Portfolio */
 .project {
-  margin-top: 300px;
+  margin-top: 20%;
 
 }
 
@@ -178,13 +272,13 @@ a {
   padding: 20px 40px 20px 40px;
   font-size: 2em;
   z-index: 30;
-  color: white;
+  color: #ffffff;
   margin-left: 50%;
   margin-top: 2%;
 
 }
 
-#neuron-cover {
+#neuron-cover, #planeme-cover {
   position: relative;
 }
 
@@ -249,7 +343,7 @@ a {
 
 .thomas-image {
   opacity: 0;
-  background: url('../images/thomas@2x.png') no-repeat;
+  background: url('../images/thomas@2x.png') no-repeat center;
   margin-left: 150px;
   background-size: contain;
 }
@@ -291,11 +385,13 @@ a {
   margin-top: 2%;
 }
 
-.icon-right {
+div.icon-right {
   opacity: 0;
-  vertical-align: middle;
   margin-left: 20px;
+  line-height: 0.5;
+  transition: margin-left 0.5s ease;
 }
+
 
 .but-block {
   display: flex;
@@ -362,16 +458,66 @@ a {
   }
 }
 
-/* @keyframes movi {
-  0% {
-    animation-timing-function: cubic-bezier(.16,0,.64,1);
-    transform: translateX(-100px);
+/* FadeInUp Animation */
+
+@-webkit-keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 20%, 0);
+    transform: translate3d(0, 20%, 0);
   }
-  63% {
-    animation-timing-function: ease-out;
-    transform: translateX(0);
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
   }
-} */
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 20%, 0);
+    transform: translate3d(0, 20%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.fadeInUp {
+  opacity: 0;  /* make things invisible upon start */
+  -webkit-animation:fadeInUp cubic-bezier(.18,0,.7,.93) 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+  -moz-animation:fadeInUp cubic-bezier(.18,0,.7,.93) 1;
+  animation:fadeInUp cubic-bezier(.18,0,.7,.93) 1;
+
+  -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+  -moz-animation-fill-mode:forwards;
+  animation-fill-mode:forwards;
+
+  /* animation-delay: 0.1s; */
+
+  -webkit-animation-duration:1s;
+  -moz-animation-duration:1s;
+  animation-duration:1s;
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp;
+}
+
+#colors-section {
+  opacity: 0;
+}
+
+.mockups-row1, .mockups-row2 {
+  opacity: 0;
+}
+
+.wireframes, .user-flow, .solutions, .mockup-1, .mockup-2 {
+  opacity: 0;
+}
 
 
 /* Home Animation
@@ -407,18 +553,6 @@ a {
   -webkit-animation-iteration-count: 1;
 }
 
-@keyframes fadeIn {
-	from {
-    opacity: 0;
-    -webkit-transform: translate3d(0, -100%, 0);
-    transform: translate3d(0, -100%, 0);
-	}
-	to {
-    opacity: 1;
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-	}
-}
 
 .neuron-image.current {
     opacity: 1;
@@ -429,7 +563,21 @@ a {
     visibility: visible !important;
 }
 
-@keyframes fadeIn {
+
+/* @keyframes fadeIn {
+	from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+	}
+	to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+	}
+} */
+
+/* @keyframes fadeIn {
     0% {
         animation-timing-function: ease-out;
         opacity: 0.0;
@@ -449,7 +597,7 @@ a {
     100% {
         opacity: 1;
     }
-}
+} */
 
 .fadeInDown {
   opacity: 0;  /* make things invisible upon start */
@@ -485,8 +633,22 @@ a {
 @keyframes fadeInLeft {
   from {
     opacity: 0;
-    -webkit-transform: translate3d(-50%, 0, 0);
-    transform: translate3d(-50%, 0, 0);
+    -webkit-transform: translate3d(-20%, 0, 0);
+    transform: translate3d(-20%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@-webkit-keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(-20%, 0, 0);
+    transform: translate3d(-20%, 0, 0);
   }
 
   to {
@@ -498,9 +660,9 @@ a {
 
 .fadeInLeft {
   opacity: 0;  /* make things invisible upon start */
-  -webkit-animation:fadeInLeft ease-out 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
-  -moz-animation:fadeInLeft ease-out 1;
-  animation:fadeInLeft ease-out 1;
+  -webkit-animation:fadeInLeft cubic-bezier(.18,0,.7,.93) 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+  -moz-animation:fadeInLeft cubic-bezier(.18,0,.7,.93) 1;
+  animation:fadeInLeft cubic-bezier(.18,0,.7,.93) 1;
 
   -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
   -moz-animation-fill-mode:forwards;
@@ -512,6 +674,69 @@ a {
   -moz-animation-duration:0.8s;
   animation-duration:0.8s;
 }
+
+.fadeInLeftSlow {
+  opacity: 0;  /* make things invisible upon start */
+  -webkit-animation:fadeInLeft cubic-bezier(.18,0,.7,.93) 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+  -moz-animation:fadeInLeft cubic-bezier(.18,0,.7,.93) 1;
+  animation:fadeInLeft cubic-bezier(.18,0,.7,.93) 1;
+
+  -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+  -moz-animation-fill-mode:forwards;
+  animation-fill-mode:forwards;
+
+  animation-delay: 0.5s;
+
+  -webkit-animation-duration:1s;
+  -moz-animation-duration:1s;
+  animation-duration:1s;
+}
+
+@-webkit-keyframes fadeInRight {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(20%, 0, 0);
+    transform: translate3d(20%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(20%, 0, 0);
+    transform: translate3d(20%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.fadeInRight {
+  opacity: 0;  /* make things invisible upon start */
+  -webkit-animation:fadeInRight ease 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+  -moz-animation:fadeInRight ease 1;
+  animation:fadeInRight ease 1;
+
+  -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+  -moz-animation-fill-mode:forwards;
+  animation-fill-mode:forwards;
+
+  /* animation-delay: 0.5s; */
+
+  -webkit-animation-duration:1s;
+  -moz-animation-duration:1s;
+  animation-duration:1s;
+}
+
 
 .clip-polygon {
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
@@ -560,8 +785,9 @@ footer {
 
 .email {
   font-family: 'droid_serifbold', Arial, sans-serif;
-  font-size: 1.5em;
-  color: #FFFFFF;
+    font-size: 1.5em;
+    color: #FFFFFF;
+    letter-spacing: 0.5px;
 
 }
 
@@ -573,18 +799,21 @@ footer {
 /* Responsiveness */
 
 @media only screen and (max-width: 598px) {
-  .project {
-    margin-top: 150px;
+
+  .hero-title {
+    font-size: 1em;
+    line-height: 1em;
   }
 
-  .left-shift {
-    margin-top: 20px;
-    margin-left: 20px;
+  .project {
+    margin-top: 20%;
   }
 
   .project-title {
     padding: 0;
-    margin: auto;
+    margin: 5%;
+    font-size: 1em;
+    min-width: 250px;
   }
 
   .first-title,
@@ -594,19 +823,16 @@ footer {
   }
 
   .project-title .first-title {
-    margin-top: 10px;
+    margin-top: 5%;
     margin-bottom: 0;
   }
 
-
   .view-but {
     margin-top: 0;
-
   }
 
   .project-title h2 {
     line-height: 1.5;
-    font-size: 1.5em;
   }
 
   .but-text {
@@ -614,19 +840,24 @@ footer {
     font-size: 10px;
   }
 
-  .neuron-image {
+  .neuron-image, .thomas-image, .planeme-image, .escapes-image {
+    height: 200px;
     margin-left: 0;
   }
 
-  .pretitle{
+  .pretitle, .box-left, .box-right {
     display: none;
   }
 
 }
 
-@media only screen and (min-width: 599px) and (max-width: 768px) {
+@media only screen and (min-width: 599px) and (max-width: 868px) {
 
-  .left-shift {
+  .box-left, .box-right {
+    display: none;
+  }
+
+  .left-shift, .right-shift {
     margin-left: 0;
   }
 
@@ -635,44 +866,45 @@ footer {
 
   }
 
-  .neuron-image {
+  .neuron-image, .thomas-image, .planeme-image, .escapes-image  {
     margin-left: 0;
   }
 
-  .project-title {
-    bottom: 40%;
-  }
 
 }
 
-@media only screen and (min-width: 769px) and (max-width: 1070px) {
+@media only screen and (min-width: 869px) and (max-width: 1070px) {
 
   .project-title {
-    bottom: 40%;
+    margin-top: 2%;
   }
 
-  .project-title {
-    margin-top: 60px;
+  .right-shift, .box-right {
+    margin-left: 40%;
   }
 
-  .left-shift {
-    margin-left: 100px;
+  .left-shift, .box-left {
+    margin-left: 0;
   }
 
-  .neuron-image {
+  .neuron-image, .thomas-image, .planeme-image, .escapes-image {
     width: 70%;
 
   }
 
-  .neuron-image {
-    margin-left: 250px;
+  .neuron-image, .planeme-image {
+    margin-left: 32%;
+  }
+
+  .thomas-image, .escapes-image {
+    margin-left: 0;
   }
 
 }
 
 @media only screen and (min-width: 1071px) and (max-width: 1199px) {
 
-  .neuron-image {
+  .neuron-image, .thomas-image, .planeme-image, .escapes-image  {
     width: 60%;
 
   }
@@ -683,25 +915,71 @@ footer {
 
 }
 
-@media only screen and (min-width: 1200px){
+/* Project page */
 
+/* Page loaded */
 
-  .neuron-image {
-    width: 50%;
-    margin-left: 350px;
-  }
+#neuron_body {
+  opacity : 1;
+  transition: opacity 2s;
+  background-color: #ffffff;
+}
 
+#text-intro {
+  opacity: 0;
+  transition: opacity 2s ease;
+}
+
+#text-intro.load {
+  opacity: 1;
 }
 
 
-/* Neuron Project page */
+
+
 
 #nav-projects {
-  position: unset;
+  /* position: unset; */
 }
 
-#neuron {
-  background: #FFFFFF !important;
+#neuron, #escapes {
+  background: #FFFFFF;
+}
+
+#neuron-hero-top-bg {
+  opacity: 1;
+  margin-left: 0;
+  margin-right: 0;
+  width: 100%;
+  background: linear-gradient(rgba(8, 38, 49, 0.96), rgba(8, 21, 27, 0.8)), url('../images/neuron/hero-bg.jpg') no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+}
+
+#escapes-hero-top-bg {
+  width: 100%;
+  background-image: url('../images/escapes/top-bg2.jpeg');
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  position: fixed;
+  z-index: 1;
+}
+
+/* .overlay-black {
+  background-color: #162131;
+  background-blend-mode: multiply;
+} */
+
+#top-pretitle {
+  opacity: 1;
 }
 
 .nav-back {
@@ -713,13 +991,14 @@ footer {
 }
 
 .top-des {
-  margin-top: 5%;
-  min-height: 550px;
+  margin: auto;
+  top: 30%;
+  left: 10%;
 }
 
 .top-text {
+  /* opacity: 0; */
   max-width: 500px;
-  margin-left: 10%;
   line-height: 2em;
 }
 
@@ -733,53 +1012,126 @@ footer {
   line-height: 1.5em;
 }
 
-.neuron-top-image {
+#neuron-top-image {
+  opacity: 0;
   position: absolute;
   max-width: 100%;
   top: 20%;
   right: 15%;
+  transition: opacity 2s ease;
 }
 
-.hero-section-neuron {
+#neuron-top-image.load {
+  opacity: 1;
+}
+
+.intro-desc {
+  margin: 0;
   width: 100%;
-  background: #1F82FD;
-  min-height: 1024px;
+  padding-bottom: 30%;
+  /* min-height: 1024px; */
 }
 
-.rectangle-black {
-
+#neuron-intro {
+  background: #28AFE6;
 }
+
+#escapes-intro {
+  /* background: #ef7174; */
+  background: linear-gradient(#e66465, #9198e5);
+}
+
+
+.neuron-visual-desc {
+  margin: 0;
+  width: 100%;
+  background: #000000;
+  background-image: url('../images/neuron/glows.png');
+  background-position: 50% 100%;
+  background-size: cover;
+}
+
 
 /* Service List Style*/
 
-ul.service-list {
+ul.project-list {
   font-weight: 400;
-  color: #98C6FF;
+  color: #ffffff;
   text-transform: uppercase;
-  line-height: 4em;
   letter-spacing: 1.5px;
   font-size: 12px;
+  list-style-type: none;
+  font-family: 'Work Sans', Arial, sans-serif;
+
 }
 
-#block-center {
+.project-list-item {
+  position: relative;
+  height: 6em;
+}
+
+.project-list-item::before {
+  content: " ";
+  width: 5px;
+  height: 5px;
+  border-radius: 5px;
+  position: absolute;
+  background: #81CBEA;
+  left: -2em;
+  top: 0.8em;
+}
+.project-list-item.es-p::before {
+  content: " ";
+  width: 5px;
+  height: 5px;
+  border-radius: 5px;
+  position: absolute;
+  background: #F98B8E;
+  left: -2em;
+  top: 0.8em;
+}
+
+.block-text-center {
   margin: auto;
   max-width: 994px;
   padding-top: 5%;
 }
 
-.rectangle-black {
-  background-image: url('images/neuron-brand.png');
-  /* background: url('images/neuron-brand.png') no-repeat;
-  background-size: contain; */
-  margin: 0;
-  max-width: 2280px;
-  height: 100%;
+.block-center {
+  margin: auto;
+  max-width: 880px;
 }
 
-#neuron-brand {
+.main-block {
+  margin-top: 25%;
+
+}
+
+#escapes-serv-list {
+  /*  */
+}
+
+
+#brand-section {
+  max-width: 994px;
+  /* max-height: 619px; */
+  margin: auto;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-top: 50px;
+}
+
+#escapes-brand {
+
+}
+
+.centred-text {
   max-width: 994px;
   max-height: 619px;
   margin: auto;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 
 #neuron-brand img {
@@ -789,10 +1141,90 @@ ul.service-list {
   border-radius: 50px;
 }
 
-img {
-  object-fit: contain;
+div.neuron-brand-image {
+  padding: 0;
+  border: 60px solid black;
+  border-radius: 50px;
+  content: url('../images/neuron-brand.png')
 }
 
+div.persona {
+  /* margin-top: 5%; */
+  content: url('../images/neuron/personas-2.png');
+  padding: 0;
+}
+
+div.com-audit {
+  content: url('../images/neuron/com-audit.png');
+  /* display: block;
+  background:  no-repeat;
+  background-size: contain;
+  min-height: 400px; */
+}
+
+div.user-flow {
+  content: url('../images/neuron/user-flow.png');
+  /* display: block;
+  background:  no-repeat;
+  background-size: contain;
+  background-position: center;
+  min-height: 800px; */
+  margin-top: 5%;
+
+}
+
+
+div.icon-design {
+  margin-top: 50px;
+  content: url('../images/escapes/icon.png');
+  padding: 0;
+}
+
+div.wireframes {
+  width: 100%;
+  content: url('../images/neuron-wireframes.png');
+  padding: 0;
+}
+
+div.solutions {
+  position: absolute;
+  left: 45%;
+  margin-top: 8%;
+  /* box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2); */
+  border-radius: 2px;
+  max-width: 488px;
+  padding: 30px;
+  background-color: white;
+}
+
+ul.text-list {
+  font-family: 'Work Sans', Arial, sans-serif;
+  font-size: 0.8em;
+  padding: 0 16px;
+  list-style-type: none;
+}
+
+.text-list-item::before {
+  content: " ";
+  width: 5px;
+  height: 5px;
+  border-radius: 5px;
+  position: absolute;
+  background: #00B1E9;
+  left: -1.2em;
+  top: 0.8em;
+}
+
+.text-list-item {
+  position: relative;
+}
+
+
+div.neuron-visual-desc > div.block-center {
+    padding-left: 15px;
+    padding-right: 15px;
+
+}
 
 /* Text Style */
 
@@ -801,21 +1233,167 @@ img {
   text-transform: uppercase;
   font-size: 12px;
   letter-spacing: 2px;
-  font-weight: 500;
+  font-weight: 600;
 }
 
-
 .text {
-
   line-height: 2em;
   -webkit-font-smoothing: antialiased;
+  font-size: 0.95em;
 
 }
 
 .white {
-  color: #E4F0FE;
+  color: #ffffff;
+}
+
+.black {
+  color: #141315;
 }
 
 .pg-section {
   margin-top: 10%;
+}
+
+ul.text {
+  padding: 0 16px;
+}
+
+.hero-top-image {
+  height: 509px;
+}
+
+#hero-text-section {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+}
+
+.extra-pad-bottom {
+  padding-bottom: 200px;
+}
+
+
+/* Escapes Project */
+
+.escapes-colors {
+  text-align: center;
+  min-height: 300px;
+  background: #ffffff;
+}
+
+div.escapes-colors-image {
+  /* margin-top: 50px; */
+  content: url('../images/escapes/colors.png');
+  padding: 0;
+}
+
+.tab-shadow {
+  box-shadow: 0px 0px 38px 14px rgba(0,0,0,0.1)
+}
+
+.rel {
+  position: relative;
+}
+
+.abt {
+  position: absolute;
+}
+
+.t-aligned {
+  text-align: center;
+}
+
+.pad-top {
+  margin-top: -200px;
+}
+
+.pad-bottom {
+  margin-bottom: -200px;
+}
+
+.fixed-width {
+  max-width: 994px;
+  margin: auto;
+  background-color: #ffffff;
+  padding: 5%;
+}
+
+.t-centred {
+  margin-top: 5%;
+}
+
+.mg-center {
+  margin: 0;
+}
+
+.fake-block {
+  height: 100vh;
+  min-height: 0;
+  width: 1px;
+}
+
+.wrapper {
+  position: relative;
+  z-index: 3;
+  background-color: #ffffff;
+}
+
+.extra-pad-side {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.extra-pad-top {
+  margin-top: 5%;
+}
+
+.t-inline {
+  display: inline;
+}
+
+div.icon-back {
+  line-height: 0.5;
+  transition: margin-left 0.5s ease;
+  position: absolute;
+  top: 30%;
+}
+
+div.b-link {
+  margin-left: 40px;
+}
+
+div.mockup-1 {
+  content: url('../images/neuron/neuron-iphone-row-1.png');
+  /* background: url('../images/neuron/neuron-iphone-row-1.png') no-repeat; */
+  width: 100%;
+}
+
+div.mockup-2 {
+  content: url('../images/neuron/neuron-iphone-row-2.png');
+  /* background: url('../images/neuron/neuron-iphone-row-2.png') no-repeat; */
+  width: 100%;
+}
+
+img.img-full-wth {
+  width: 100%;
+}
+
+/* Loader Style */
+
+#loader {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: url('../loader.gif') no-repeat center #000000;
+  z-index: 9999;
+}
+
+.lock-screen {
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
 }

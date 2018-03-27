@@ -12,42 +12,54 @@
     <meta property="og:description" content="..."/>
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" title="text/css" href="style/home-style.css">
+    <link rel="stylesheet" title="text/css" href="style/responsiveness.css">
     <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,500,600,700" rel="stylesheet">
     <link rel="stylesheet" href="style/stylesheet.css" type="text/css" charset="utf-8" />
     <link rel="stylesheet" href="style/stylesheet2.css" type="text/css" charset="utf-8" />
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"> -->
   </head>
 
-  <body id="home-bg">
+  <body id="home-bg" class="lock-screen">
+    <div id="loader"></div>
       <header class="nav-down">
-        <div class="container-fluid">
+        <div class="container-fluid extra-pad-side">
           <div class="row">
             <div class="col-md-8"><a class="logo" href="#"><img src="images/logo.png"></a></div>
-            <div class="col-md-4">
-              <div class="nav-menu">
-                <a href="#home" class="slide-section">Home</a>
-                <a href="#projects" class="slide-section">Projects</a>
-                <a href="#">About</a>
-              </div>
+            <div class="col-md-4 nav-menu">
+                <a href="#home" class="slide-section">Home<div class="underLinks"></div></a>
+                <a href="#projects" class="slide-section">Projects<div class="underLinks"></div></a>
+                <a href="#">About<div class="underLinks"></div></a>
             </div>
           </div>
         </div>
       </header>
       <!-- Hero-image -->
       <section class="hero-section" id="home">
-        <div class="container-fluid"></div>
+        <div class="hero-text">
+          <p class="hero-subtitle">Anna Prokhorova Design Studio</p>
+          <h1 class="hero-title">Creative Solvers - Dreamers</h1>
+          <p class="hero-des">
+            It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+          </p>
+        </div>
+        <div class="homepage-hero-module">
+          <div class="video-container">
+              <div class="filter"></div>
+              <video autoplay loop class="fillWidth">
+                  <source src="./images/video-bg.mp4" type="video/mp4" />Your browser does not support the video tag. I suggest you upgrade your browser.
+                  <!-- <source src="PATH_TO_WEBM" type="video/webm" />Your browser does not support the video tag. I suggest you upgrade your browser. -->
+              </video>
+              <!-- <div class="poster hidden">
+                  <img src="PATH_TO_JPEG" alt="">
+              </div> -->
+          </div>
+        </div>
       </section>
-      <div class="hero-text">
-        <p class="hero-subtitle">Anna Prokhorova Design Studio</p>
-        <h1 class="hero-title">Creative Solvers - Dreamers</h1>
-        <p class="hero-des">
-          It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
-        </p>
-      </div>
-      <section class="container-fluid">
+
+      <section class="container-fluid extra-pad-side">
         <!-- Portfolio projects -->
         <!-- Project start -->
-        <div class="project container-fluid" id="projects">
+        <div class="project container-fluid extra-pad-side" id="projects">
           <div class="row" id="neuron-cover">
             <div class="project-title left-shift">
               <h3 class="pretitle">App Design</h3>
@@ -60,9 +72,11 @@
                   </div>
                 </div>
                 <div class="icon-right">
-                  <svg class="but-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="5" viewBox="0 0 24 5"><style type="text/css">.st0{fill:#FFFFFF;}</style><path class="st0" d="M19 2V0l5 2.5L19 5V3H0V2H19z"/><title>  arrow-right</title><desc>
-                    Created with Sketch.</desc><path class="st0" d="M19 2V0l5 2.5L19 5V3H0V2H19z"/>
-                  </svg>
+                  <a href="neuron.html">
+                    <svg class="but-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="5" viewBox="0 0 24 5"><style type="text/css">.st0{fill:#FFFFFF;}</style><path class="st0" d="M19 2V0l5 2.5L19 5V3H0V2H19z"/><title>  arrow-right</title><desc>
+                      Created with Sketch.</desc><path class="st0" d="M19 2V0l5 2.5L19 5V3H0V2H19z"/>
+                    </svg>
+                  </a>
                 </div>
               </div>
             </div>
@@ -72,7 +86,7 @@
         </div>
         <!-- Project end -->
         <!-- Project start -->
-        <div class="project container-fluid">
+        <div class="project container-fluid extra-pad-side">
           <div class="row" id="thomas-cover">
             <div class="project-title right-shift">
               <h3 class="pretitle">Website Design</h3>
@@ -85,9 +99,11 @@
                   </div>
                 </div>
                 <div class="icon-right">
-                  <svg class="but-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="5" viewBox="0 0 24 5"><style type="text/css">.st0{fill:#FFFFFF;}</style><path class="st0" d="M19 2V0l5 2.5L19 5V3H0V2H19z"/><title>  arrow-right</title><desc>
-                    Created with Sketch.</desc><path class="st0" d="M19 2V0l5 2.5L19 5V3H0V2H19z"/>
-                  </svg>
+                  <a href="neuron.html">
+                    <svg class="but-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="5" viewBox="0 0 24 5"><style type="text/css">.st0{fill:#FFFFFF;}</style><path class="st0" d="M19 2V0l5 2.5L19 5V3H0V2H19z"/><title>  arrow-right</title><desc>
+                      Created with Sketch.</desc><path class="st0" d="M19 2V0l5 2.5L19 5V3H0V2H19z"/>
+                    </svg>
+                  </a>
                 </div>
               </div>
             </div>
@@ -97,7 +113,7 @@
         </div>
         <!-- Project end -->
         <!-- Project start -->
-        <div class="project container-fluid">
+        <div class="project container-fluid extra-pad-side">
           <div class="row" id="planeme-cover">
             <div class="project-title left-shift">
               <h3 class="pretitle">Brand Identity</h3>
@@ -110,9 +126,11 @@
                   </div>
                 </div>
                 <div class="icon-right">
-                  <svg class="but-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="5" viewBox="0 0 24 5"><style type="text/css">.st0{fill:#FFFFFF;}</style><path class="st0" d="M19 2V0l5 2.5L19 5V3H0V2H19z"/><title>  arrow-right</title><desc>
-                    Created with Sketch.</desc><path class="st0" d="M19 2V0l5 2.5L19 5V3H0V2H19z"/>
-                  </svg>
+                  <a href="neuron.html">
+                    <svg class="but-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="5" viewBox="0 0 24 5"><style type="text/css">.st0{fill:#FFFFFF;}</style><path class="st0" d="M19 2V0l5 2.5L19 5V3H0V2H19z"/><title>  arrow-right</title><desc>
+                      Created with Sketch.</desc><path class="st0" d="M19 2V0l5 2.5L19 5V3H0V2H19z"/>
+                    </svg>
+                  </a>
                 </div>
               </div>
             </div>
@@ -121,8 +139,9 @@
           </div>
         </div>
         <!-- Project end -->
+
         <!-- Project start -->
-        <div class="project container-fluid">
+        <div class="project container-fluid extra-pad-side">
           <div class="row" id="escapes-cover">
             <div class="project-title right-shift">
               <h3 class="pretitle">App Design</h3>
@@ -131,13 +150,15 @@
               <div class="but-block">
                 <div class="view-but">
                   <div class="inner-but">
-                    <a class="but-text" href="neuron.html">View Project</a>
+                    <a class="but-text" href="escapes.html">View Project</a>
                   </div>
                 </div>
                 <div class="icon-right">
-                  <svg class="but-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="5" viewBox="0 0 24 5"><style type="text/css">.st0{fill:#FFFFFF;}</style><path class="st0" d="M19 2V0l5 2.5L19 5V3H0V2H19z"/><title>  arrow-right</title><desc>
-                    Created with Sketch.</desc><path class="st0" d="M19 2V0l5 2.5L19 5V3H0V2H19z"/>
-                  </svg>
+                  <a href="neuron.html">
+                    <svg class="but-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="5" viewBox="0 0 24 5"><style type="text/css">.st0{fill:#FFFFFF;}</style><path class="st0" d="M19 2V0l5 2.5L19 5V3H0V2H19z"/><title>  arrow-right</title><desc>
+                      Created with Sketch.</desc><path class="st0" d="M19 2V0l5 2.5L19 5V3H0V2H19z"/>
+                    </svg>
+                  </a>
                 </div>
               </div>
             </div>
@@ -147,7 +168,7 @@
         </div>
         <!-- Project end -->
     </section>
-    <footer class="container-fluid">
+    <footer class="container-fluid extra-pad-side">
       <div class="row">
         <p class="email">anna@annaprh.com</p>
         <p class="email-des">Contact me for an appointment, a project, or a cup of coffee</p>

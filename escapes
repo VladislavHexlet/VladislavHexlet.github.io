@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en" id="neuron">
+  <head>
+  <title>Anna Prokhorova Portfolio</title>
+  <meta charset="utf-8">
+  <meta content="ie=edge" http-equiv="x-ua-compatible">
+  <meta content="Description">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+  <meta property="og:title" content="Portfolio of Anna Prokhorova"/>
+  <meta property="og:image" content="..."/>
+  <meta property="og:site_name" content="Anna Prokhorova Design Studio"/>
+  <meta property="og:description" content="..."/>
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" title="text/css" href="style/home-style.css">
+  <link rel="stylesheet" title="text/css" href="style/responsiveness.css">
+  <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,500,600,700" rel="stylesheet">
+  <link rel="stylesheet" href="style/stylesheet.css" type="text/css" charset="utf-8" />
+  <link rel="stylesheet" href="style/stylesheet2.css" type="text/css" charset="utf-8" />
+  </head>
+
+  <body id="neuron_body">
+    <header id="nav-projects">
+      <div class="container-fluid nav-back">
+        <div class="row">
+          <div class="col-xs-6 col-md-6">
+            <a class="back" href="index.html#neuron-cover">
+              <img src="icons/arrow-back.svg" alt="link-to-back">
+            </a>
+          </div>
+          <div class="col-xs-6 col-md-6">
+            <a class="close" href="index.html">Close</a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Hero-image -->
+    <div class="container-fluid" id="hero-top-bg">
+      <div class="row top-des">
+        <div class="col-xs-12 col-sm-8">
+          <div class="top-text" id="top-text-element">
+            <h3 class="pretitle" id="top-pretitle">UX/UI Design</h3>
+            <h2 class="main-title">Neuron App</h2>
+            <p class="sub-text">
+              Singapore has great infrastructure so a bike-sharing system is very popular in this city.
+              This case study is about how I approached to create a booking and tracking experience easier that need it for the rider as never.
+            </p>
+          </div>
+        </div>
+        <div class="col-sm-4 neuron-top-image">
+          <img src="images/iPhone_6_plus_perspective_neuron.png">
+        </div>
+      </div>
+    </div>
+    <!-- Project Description Start-->
+    <div class="container-fluid neuron-intro-desc">
+      <div class="row">
+        <div class="container-fluid block-text-center">
+          <div class="col-sm-5">
+            <ul class="service-list">
+              <li>Design Research</li>
+              <li>Wireframing</li>
+              <li>Prototyping</li>
+              <li>UX/UI Design</li>
+              <li>UI Animation</li>
+            </ul>
+          </div>
+          <div class="col-xs-12 col-sm-7">
+            <h3 class="headline white">The Challenge</h3>
+            <p class="text white">
+              Neuron brand already has several services by one brand, it has focused on another one.
+              We were tasked with design the modern and delightful iOS app for mobility sharing system so that the visual
+              style will be consistent with the general brand and will open new opportunities for Neuron’s system users.
+            </p>
+            <div class="pg-section">
+              <h3 class="headline white">The Problem</h3>
+              <p class="text white">
+                The goal was to create a functional and complex app with delightful experience and
+                allow users to be happy to share rides with friends and have rides for points.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-fluid" id="neuron-brand" >
+        <div class="row brand-image">
+          <div class="neuron-brand-image col-xs-12 col-md-12">
+            <!-- <img src="images/neuron-brand.png" alt="neuron-branding"> -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid block-center main-block">
+      <!-- Persona Block -->
+      <div class="col-xs-12 col-sm-12 centred-text">
+        <h3 class="headline black">The Challenge</h3>
+        <p class="text black">
+          Neuron brand already has several services by one brand, it has focused on another one.
+          We were tasked with design the modern and delightful iOS app for mobility sharing system so that the visual
+          style will be consistent with the general brand and will open new opportunities for Neuron’s system users.
+        </p>
+      </div>
+      <div class="col-xs-12 col-sm-12 persona"></div>
+      <!-- Competitors Block -->
+      <div class="col-xs-12 col-sm-12 centred-text">
+        <h3 class="headline black">Competitor Audit</h3>
+        <ul class="text black">
+          <li>The competitor doesn't provide scanning QR code</li>
+          <li>Competitors don’t provide scooters for the users</li>
+          <li>Competitors don't have the "Book" device feature</li>
+          <li>Competitors don’t have a gamification approach</li>
+        </ul>
+      </div>
+      <div class="col-xs-12 col-sm-12 persona"></div>
+      <!-- User Flow -->
+      <div class="col-xs-12 col-sm-12 centred-text">
+        <h3 class="headline black">User Flow</h3>
+        <p class="text black">
+          I created a chart for User Flow based on the main features and the user’s needs.
+          To make booking the device easier and focus the user on finding a good place to have a ride from,
+          the user has an access to do this upon opening the app. The dashboard feature is one of the important
+          feature created to track the riding, that can be stopped whenever the user wants.
+        </p>
+      </div>
+      <div class="col-xs-12 col-sm-12 persona"></div>
+    </div>
+    <div class="container-fluid block-center">
+      <!-- Wireframing -->
+      <div class="col-xs-12 col-sm-12 centred-text">
+        <h3 class="headline black">Wireframing</h3>
+        <p class="text black">
+          I created a chart for User Flow based on the main features and the user’s needs.
+          To make booking the device easier and focus the user on finding a good place to have a ride from,
+          the user has an access to do this upon opening the app. The dashboard feature is one of the important
+          feature created to track the riding, that can be stopped whenever the user wants.
+        </p>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div class="col-xs-12 col-sm-12 wireframes"></div>
+      <div class="col-xs-12 col-sm-5 solutions">
+        <h3 class="headline black">Wireframing</h3>
+        <ul class="text-list black">
+          <li>The competitor doesn't provide scanning QR code</li>
+          <li>Competitors don’t provide scooters for the users</li>
+          <li>Competitors don't have the "Book" device feature</li>
+          <li>Competitors don’t have a gamification approach</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container-fluid neuron-visual-desc ">
+      <div class="row block-center">
+        <!-- Visual Design -->
+        <div class="col-xs-12 col-sm-12 centred-text">
+          <h3 class="headline white">Visual Design</h3>
+          <p class="text white">
+            I created a chart for User Flow based on the main features and the user’s needs.
+            To make booking the device easier and focus the user on finding a good place to have a ride from,
+            the user has an access to do this upon opening the app. The dashboard feature is one of the important
+            feature created to track the riding, that can be stopped whenever the user wants.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    </div>
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js"></script>
+
+    <!-- ScrollMagic -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.js"></script>
+
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="js/project.js"></script>
+  </body>
+</html>
