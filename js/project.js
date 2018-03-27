@@ -14,7 +14,7 @@ $(function() {
   console.log(1)
   $('body').removeClass('lock-screen');
   $('#loader').remove();
-
+  
   // var appearPage = function(id) {
   //   console.log(id)
   //   console.log($(id).css("opacity" ))
