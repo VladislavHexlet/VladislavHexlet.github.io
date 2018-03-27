@@ -4,7 +4,7 @@ $(function() {
     $('body').removeClass('lock-screen');
     //$('#loader').remove();
     setTimeout(function () {
-      $('#loader').fadeOut(600)
+      $('#loader').fadeOut('slow')
     }, 1000);
   });
 
