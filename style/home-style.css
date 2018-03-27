@@ -922,7 +922,7 @@ footer {
 /* Page loaded */
 
 #neuron_body {
-  opacity : 0;
+  opacity : 1;
   transition: opacity 2s;
   background-color: #ffffff;
 }
