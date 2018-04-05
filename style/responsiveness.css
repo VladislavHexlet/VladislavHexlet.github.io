@@ -2,15 +2,22 @@
 /* Home Page */
 @media only screen and (max-width: 598px) {
 
-  /* p {
-    font-size: 0.85em;
-  } */
+  /* Home  */
+
+  .box-left, .box-right {
+    display: none;
+  }
+
+  .left-shift, .right-shift {
+    margin-left: 0;
+  }
 
 
-
-  /* .extra-pad-top {
-
-  } */
+  .neuron-image, .vault-image, .planeme-image, .escapes-image  {
+    margin-left: 0;
+    height: 250px;
+    background-position: center;
+  }
 
   .text {
     font-size: 0.85em;
@@ -21,17 +28,16 @@
   }
 
   .hero-title {
-    font-size: 1em;
+    font-size: 1.2em;
     line-height: 1em;
   }
 
   .project {
-    margin-top: 20%;
+    margin-top: 10%;
   }
 
   .top-des {
     left: 0;
-
   }
 
   .project-title {
@@ -39,6 +45,8 @@
     margin: 5%;
     font-size: 1em;
     min-width: 250px;
+    top: 15%;
+    left: 5%
   }
 
   .first-title,
@@ -66,7 +74,6 @@
   }
 
   .neuron-image, .thomas-image, .planeme-image, .escapes-image {
-    height: 200px;
     margin-left: 0;
   }
 
@@ -74,7 +81,16 @@
     display: none;
   }
 
-  #neuron-hero-top-bg, #escapes-hero-top-bg {
+  .extra-pad-side {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  div.icon-right {
+    line-height: 1.1em;
+  }
+
+  #neuron-hero-top-bg, #escapes-hero-top-bg, #vault-hero-top-bg {
     position: relative;
     height: 70vh;
   }
@@ -133,8 +149,45 @@
 
   }
 
+  /* Vault Project */
+
+  #v-middle-bg {
+    height: 50vh;
+  }
+
+  #vault-mockup-1 {
+    left: 5%;
+    top: 50px;
+  }
+
+  #vault-mockup-2 {
+      top: 100px;
+      right: 5%;
+  }
+
+  .col-25 {
+    width: 50%;
+  }
+
+  .extra-pad-bottom {
+    padding-bottom: 100px;
+  }
+
+  .mini-container {
+    width: 150px;
+  }
+
+  #planime-intro {
+    min-height: 550px;
+  }
+
+  .extra-pad-left {
+    padding-left: 15px;
+  }
 
 }
+
+
 
 @media only screen and (min-width: 599px) and (max-width: 768px) {
 
