@@ -277,7 +277,7 @@ a:hover {
   text-transform: uppercase;
   letter-spacing: 1.5px;
   color: #6F7171;
-  font-weight: 400;
+  font-weight: 500;
 }
 
 .project-title .first-title {
@@ -995,7 +995,22 @@ footer {
   padding-bottom: 15%;
   background-size: cover;
   /* background-color: rgba(0, 0, 0, 0.3); */
-  /* background: linear-gradient(rgba(23, 28, 35, 0.8), rgba(23, 28, 35, 0.8)), url('../images/planime/cover.png') no-repeat; */
+  /* background: url('../images/planime/logo-bg.png') no-repeat; */
+  background: url('../images/planime/logo-bg.png') no-repeat;
+  background-position: center;
+  background-size: contain;
+  height: 100vh;
+  /* position: fixed; */
+  z-index: 1;
+}
+
+.pl-logo {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100px;
+  margin: auto;
 }
 
 /* .overlay-black {
@@ -1060,7 +1075,8 @@ footer {
 
 
 #neuron-intro {
-  background: #28AFE6;
+  /* background: #28AFE6; */
+  background: linear-gradient(#1da1d8, #609cda);
 }
 
 #escapes-intro {
@@ -1069,12 +1085,12 @@ footer {
 }
 
 #vault-intro {
-  background: linear-gradient(#2580fc, #203b5f);
+  background: linear-gradient(#6aa0e8, #2f63a9);
 }
 
 #planime-intro {
-  /* background: linear-gradient(#5da9e1, #2e6ba7); */
-  padding-bottom: 5%;
+  background: linear-gradient(#5da9e1, #2e6ba7);
+  padding-bottom: 10%;
 }
 
 
@@ -1128,9 +1144,8 @@ ul.project-list {
 }
 
 ul.project-goals {
-  /* font-weight: 400; */
   color: #ffffff;
-  list-style-type: none;
+  list-style-type: disc;
   -webkit-padding-start: 0;
 }
 
@@ -1156,6 +1171,10 @@ ul.project-goals .text {
 .main-block {
   margin-top: 32%;
 
+}
+
+.project-goals ul {
+  -webkit-padding-start: 40px;
 }
 
 #escapes-serv-list {
@@ -1269,14 +1288,15 @@ ul.text-list {
 
 .text-list-item::before {
   content: " ";
-  width: 5px;
-  height: 5px;
+  width: 4px;
+  height: 4px;
   border-radius: 5px;
   position: absolute;
-  background: #00B1E9;
+  background: #02b1ea;
   left: -1.2em;
   top: 0.8em;
 }
+
 
 .text-list-item {
   position: relative;
@@ -1303,8 +1323,17 @@ div.neuron-visual-desc > div.block-center {
   line-height: 2em;
   -webkit-font-smoothing: antialiased;
   font-size: 0.95em;
-
 }
+
+#neuron-list .project-list-item::before {
+  background: #82dbff80;
+}
+
+#vault-list .project-list-item::before {
+  background: #77b1ff80;
+}
+
+/* Colors */
 
 .white {
   color: #ffffff;
@@ -1314,12 +1343,21 @@ div.neuron-visual-desc > div.block-center {
   color: #141315;
 }
 
+.pl-grey {
+  color: #666b71;
+}
+
+.v-color-name {
+  color: #81878a;
+  font-size: 70%;
+}
+
 .pg-section {
   margin-top: 10%;
 }
 
 ul.text {
-  /* padding: 0 16px; */
+  padding: 0 16px;
 }
 
 .hero-top-image {
@@ -1380,10 +1418,19 @@ div.escapes-colors-image {
 .subtext {
   /* color: #ffffff; */
   text-transform: uppercase;
-  font-size: 10px;
+  font-size: 0.7em;
   letter-spacing: 1px;
-  font-weight: 400;
+  font-weight: 500;
   font-family: 'Work Sans', Arial, sans-serif;
+}
+
+.subtext-white {
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 0.7em;
+  font-family: 'Work Sans', Arial, sans-serif;
+  letter-spacing: 1px;
+  text-transform: uppercase;
 }
 
 .pad-top {
@@ -1407,6 +1454,12 @@ div.escapes-colors-image {
   /* background-color: #ffffff; */
   padding-left: 5%;
   padding-right: 5%;
+}
+
+.md-fixed-width {
+  max-width: 994px;
+  margin: auto;
+  padding: 5%;
 }
 
 .wb-full-wth {
@@ -1464,8 +1517,12 @@ div.escapes-colors-image {
   content: "";
   width: 100%;
   height: 1px;
-  background: #29303c;
+  background: #4384b7;
   margin: 0 auto;
+}
+
+.padr-10 {
+  padding-right: 35%;
 }
 
 .extra-pad-side {
@@ -1518,6 +1575,11 @@ img.img-full-wth {
   height: auto;
 }
 
+.img-md-wth {
+  width: 70%;
+  height: auto;
+}
+
 #vault-mockup-1 {
   left: 10%;
   top: 150px;
@@ -1536,8 +1598,8 @@ img.img-full-wth {
   background-position: center;
   background-size: cover;
   height: 120vh;
-
 }
+
 
 .col-25 {
   width: 45%;
@@ -1563,8 +1625,8 @@ img.img-full-wth {
 }
 
 .icon-plus {
-  font-size: 50px;
-  color: #5da9e1;
+  font-size: 3em !important;
+  color: #e4e6e9;
 }
 
 .img-frame {
@@ -1595,3 +1657,35 @@ img.img-full-wth {
   /* background-color: #5da9e1; */
   width: 100%;
 }
+
+.wrapper-stationary {
+  position: relative;
+  z-index: 3;
+  background-color: #171c24;
+}
+
+.pl-stationary-text {
+  left: 10%;
+  padding-top: 10%;
+}
+
+/* .clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+
+.clearfix {
+    display: inline-block;
+}
+
+html[xmlns] .clearfix {
+    display: block;
+}
+
+* html .clearfix {
+    height: 1%;
+} */

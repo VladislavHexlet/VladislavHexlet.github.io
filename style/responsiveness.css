@@ -4,12 +4,18 @@
 
   /* Home  */
 
+
+
   .box-left, .box-right {
     display: none;
   }
 
   .left-shift, .right-shift {
     margin-left: 0;
+  }
+  .fixed-width {
+    padding-bottom: 8%;
+    padding-top: 8%;
   }
 
 
@@ -90,15 +96,19 @@
     line-height: 1.1em;
   }
 
-  #neuron-hero-top-bg, #escapes-hero-top-bg, #vault-hero-top-bg {
+  #neuron-hero-top-bg, #escapes-hero-top-bg, #vault-hero-top-bg, #planime-hero-top-bg {
     position: relative;
     height: 70vh;
   }
 
   /* Projects */
 
-  .main-block {
-    margin-top: 15%;
+  /* .main-block {
+    margin-top: 25%;
+  } */
+
+  #brand-section {
+    margin-top: 30px;
   }
 
   .sub-text {
@@ -132,12 +142,9 @@
   }
 
   .intro-desc {
-    min-height: 650px;
+    min-height: 600px;
   }
 
-  .main-block {
-    margin-top: 30%;
-  }
 
   div.persona {
     margin-top: 25px;
@@ -174,16 +181,52 @@
   }
 
   .mini-container {
-    width: 150px;
+    width: 40%;
+    height: 50px;
   }
 
   #planime-intro {
     min-height: 550px;
+    padding-bottom: 0;
   }
 
   .extra-pad-left {
     padding-left: 15px;
   }
+  .padr-10 {
+    padding-right: 0;
+  }
+
+  .icon-plus {
+    font-size: 2em !important;
+  }
+
+  .pl-stationary-text {
+    left: 0;
+    padding-top: 10%;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .pl-log {
+    top: 15%;
+  }
+
+  #planime-logo-mockup {
+    height: 50vh;
+  }
+
+  /* Escapes */
+
+  #escapes-mockups {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+
+  .mockups-row1, .mockups-row2 {
+    padding: 0;
+  }
+
 
 }
 
@@ -245,7 +288,7 @@
   }
 
   .main-block {
-    margin-top: 30%;
+    margin-top: 25%;
   }
 
 }
@@ -283,21 +326,21 @@
     margin-top: 0;
   }
 
-  div.neuron-brand-image {
+  /* div.neuron-brand-image {
     padding: 0;
     border: 30px solid black;
     border-radius: 25px;
     content: url(../images/neuron-brand.png);
-  }
+  } */
 
   .brand-image {
     padding-right: 15px;
     padding-left: 15px;
   }
 
-  .main-block {
-    margin-top: 30%;
-  }
+  /* .main-block {
+    margin-top: 25%;
+  } */
 
   .intro-desc {
     min-height: 800px;
@@ -326,11 +369,19 @@
     margin-top: 5%;
   }
 
+  .intro-desc {
+    padding-bottom: 30%;
+  }
+
 }
 
-/* Neuron Project */
+@media only screen and (min-width: 1200px) and (max-width: 1300px) {
+  .main-block {
+    margin-top: 32%;
+  }
 
-@media only screen and (max-width: 992px) {
-
+  .intro-desc {
+    padding-bottom: 25%;
+  }
 
 }

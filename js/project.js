@@ -1,10 +1,10 @@
 $(function() {
 
   $(window).on('load', function() {
-    $('body').removeClass('lock-screen');
     //$('#loader').remove();
     setTimeout(function () {
-      $('#loader').fadeOut('slow')
+      $('#loader').fadeOut('slow');
+      $('body').removeClass('lock-screen');
     }, 1000);
   });
 
@@ -44,7 +44,7 @@ $(function() {
   animate('.wireframes', 'load');
   animate('.solutions', 'fadeInUp');
   animate('.mockup-1', 'fadeInRight');
-  animate('.mockup-2', 'fadeInLeftSlow')
+  animate('.mockup-2', 'fadeInLeftSlow');
 
   // Back link animation
   $('.back-link').hover(function(e) {

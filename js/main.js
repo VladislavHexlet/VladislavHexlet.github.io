@@ -92,9 +92,11 @@ $(function() {
   });
 
   $(window).on('load', function() {
-    $('body').removeClass('lock-screen');
     setTimeout(function () {
-      $('#loader').fadeOut('slow')
+      $('#loader').fadeOut('slow');
+      $('body').removeClass('lock-screen');
+
+      $('.hero-title').addClass('fadeInUp');
 
       // Init ScrollMagic Controller
       animate('#neuron-cover');
