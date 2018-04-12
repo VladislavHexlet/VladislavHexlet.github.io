@@ -5,6 +5,7 @@ $(function() {
     setTimeout(function () {
       $('#loader').fadeOut('slow');
       $('body').removeClass('lock-screen');
+      animate('#text-intro', 'fadeInUp');
     }, 1000);
   });
 
@@ -27,10 +28,10 @@ $(function() {
   // };
 
   //setTimeout(appearPage, 0, '#neuron_body');
-  animate('#text-intro', 'load');
-  animate('#neuron-top-image', 'load');
-  animate('#vault-hero-top-bg', 'load');
-  animate('#planime-hero-top-bg', 'load');
+  //animate('#text-intro', 'load');//
+  //animate('#neuron-top-image', 'load');//
+  //animate('#vault-hero-top-bg', 'load');//
+  //animate('#planime-hero-top-bg', 'load');//
   animate('#colors-section', 'fadeInUp');
   animate('.mockups-row1', 'fadeInUp');
   animate('.mockups-row2', 'fadeInUp');
