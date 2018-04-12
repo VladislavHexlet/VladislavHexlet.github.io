@@ -31,6 +31,18 @@
     position: absolute;
   }
 
+  .icon-back {
+    display: none;
+  }
+
+  div.icon-back {
+    position: absolute;
+  }
+
+  div.b-link {
+    margin-left: 15px;
+  }
+
   .hero-title {
     font-size: 1.2em;
     line-height: 1em;
@@ -92,7 +104,7 @@
 
   #neuron-hero-top-bg, #escapes-hero-top-bg, #vault-hero-top-bg, #planime-hero-top-bg {
     position: relative;
-    height: 70vh;
+    height: 55vh;
   }
 
   #planime-intro .extra-pad-left {
