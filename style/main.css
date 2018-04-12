@@ -1107,7 +1107,7 @@ footer {
 /* Service List Style*/
 
 ul.project-list {
-  font-weight: 400;
+  font-weight: 300;
   color: #ffffff;
   text-transform: uppercase;
   letter-spacing: 1.5px;
@@ -1138,7 +1138,7 @@ ul.project-list {
   height: 5px;
   border-radius: 5px;
   position: absolute;
-  background: #F98B8E;
+  background: #f79da0;
   left: -2em;
   top: 0.8em;
 }
@@ -1353,7 +1353,7 @@ div.neuron-visual-desc > div.block-center {
 }
 
 .pg-section {
-  margin-top: 10%;
+  margin-top: 5%;
 }
 
 ul.text {
