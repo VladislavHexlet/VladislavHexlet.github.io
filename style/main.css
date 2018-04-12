@@ -277,7 +277,7 @@ a:hover {
   text-transform: uppercase;
   letter-spacing: 1.5px;
   color: #6F7171;
-  font-weight: 500;
+  font-weight: 400;
 }
 
 .project-title .first-title {
@@ -1065,11 +1065,16 @@ footer {
   opacity: 1;
 }
 
-.intro-desc {
+.n-intro-desc {
   margin: 0;
   width: 100%;
   padding-bottom: 20%;
-  /* min-height: 1024px; */
+}
+
+.es-intro-desc {
+  margin: 0;
+  width: 100%;
+  padding-bottom: 20%;
 }
 
 
@@ -1184,12 +1189,8 @@ ul.project-goals .text {
 
 #brand-section {
   max-width: 994px;
-  /* max-height: 619px; */
-  margin: auto;
-  position: absolute;
   left: 0;
   right: 0;
-  margin-top: 50px;
 }
 
 #escapes-brand {
@@ -1505,6 +1506,10 @@ div.escapes-colors-image {
   position: relative;
   z-index: 3;
   background-color: #ffffff;
+}
+
+#planime-intro .extra-pad-left {
+  padding-left: 0;
 }
 
 #planime-wrapper {

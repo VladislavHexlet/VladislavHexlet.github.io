@@ -4,8 +4,6 @@
 
   /* Home  */
 
-
-
   .box-left, .box-right {
     display: none;
   }
@@ -40,10 +38,6 @@
 
   .project {
     margin-top: 10%;
-  }
-
-  .top-des {
-    left: 0;
   }
 
   .project-title {
@@ -101,15 +95,27 @@
     height: 70vh;
   }
 
-  /* Projects */
-
-  /* .main-block {
-    margin-top: 25%;
-  } */
-
-  #brand-section {
-    margin-top: 30px;
+  #planime-intro .extra-pad-left {
+    padding-left: 5%;
   }
+
+  .top-des {
+    left: 0;
+  }
+
+  .pad-top {
+    margin-top: -150px;
+  }
+
+  .pad-bottom {
+    margin-bottom: 0;
+  }
+
+
+  .main-block {
+    margin-top: 35%;
+  }
+
 
   .sub-text {
     margin-top: 10%;
@@ -141,8 +147,12 @@
     margin-top: 25px;
   }
 
-  .intro-desc {
-    min-height: 600px;
+  .n-intro-desc {
+    min-height: 680px;
+  }
+
+  .es-intro-desc {
+    min-height: 630px;
   }
 
 
@@ -230,12 +240,12 @@
 
 }
 
+/* Md Tablet */
+
+@media only screen and (min-width: 599px) and (max-width: 767px) {
 
 
-@media only screen and (min-width: 599px) and (max-width: 768px) {
-
-
-  .box-left, .box-right {
+  .box-left, .box-right, .fake-block {
     display: none;
   }
 
@@ -256,8 +266,6 @@
     left: 0;
 
   }
-
-  /* Neuron project */
 
   #neuron-top-image {
     display: none;
@@ -291,9 +299,67 @@
     margin-top: 25%;
   }
 
+  /* Escapes */
+
+  #escapes-mockups {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+
+  .mockups-row1, .mockups-row2 {
+    padding: 0;
+  }
+
 }
 
-@media only screen and (min-width: 769px) and (max-width: 1070px) {
+/* Tablet */
+
+@media only screen and (min-width: 768px) and (max-width: 1070px) {
+
+  #neuron-hero-top-bg, #escapes-hero-top-bg, #vault-hero-top-bg, #planime-hero-top-bg {
+    position: relative;
+    height: 50vh;
+  }
+
+  .top-des {
+    left: 2%;
+  }
+
+  .fake-block {
+    display: none;
+  }
+
+  .n-intro-desc {
+    padding-bottom: 40%;
+  }
+
+  .es-intro-desc {
+    padding-bottom: 30%;
+  }
+
+
+  .pad-top {
+    margin-top: -280px;
+  }
+
+  /* Escapes */
+
+  #escapes .pad-top {
+    margin-top: 0;
+  }
+
+  #escapes-mockups {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+
+  .mockups-row1, .mockups-row2 {
+    padding: 0;
+  }
+
+  .extra-pad-bottom {
+    padding-bottom: 100px;
+  }
 
   .project-title {
     margin-top: 2%;
@@ -326,21 +392,11 @@
     margin-top: 0;
   }
 
-  /* div.neuron-brand-image {
-    padding: 0;
-    border: 30px solid black;
-    border-radius: 25px;
-    content: url(../images/neuron-brand.png);
-  } */
-
   .brand-image {
     padding-right: 15px;
     padding-left: 15px;
   }
 
-  /* .main-block {
-    margin-top: 25%;
-  } */
 
   .intro-desc {
     min-height: 800px;
@@ -348,6 +404,14 @@
 
   div.solutions {
     display: none;
+  }
+
+  #planime-intro .extra-pad-left {
+    padding-left: 5%;
+  }
+
+  .extra-pad-left {
+    padding-left: 5%;
   }
 
 }
