@@ -1,46 +1,6 @@
 
-/* Home Page */
-
-@media only screen and (min-width: 320px) and (max-width: 413px) {
-  .pad-top {
-    margin-top: -20%;
-  }
-
-  .n-intro-desc {
-    padding-bottom: 25%;
-  }
-
-  .pad-bottom {
-    margin-bottom: 0;
-  }
-
-  #escapes .pad-top {
-    margin-top: -15%;
-  }
-
-  #neuron-hero-top-bg, #escapes-hero-top-bg, #vault-hero-top-bg, #planime-hero-top-bg {
-    position: relative;
-    height: 70vh;
-  }
 
 
-
-}
-
-@media only screen and (min-width: 414px) and (max-width: 567px) {
-  .pad-top {
-      margin-top: -35%;
-  }
-
-  .pad-bottom {
-    margin-bottom: 20%;
-  }
-
-  #neuron-hero-top-bg, #escapes-hero-top-bg, #vault-hero-top-bg, #planime-hero-top-bg {
-    position: relative;
-    height: 70vh;
-  }
-}
 
 @media only screen and (max-width: 568px) {
 
@@ -275,8 +235,55 @@
     padding: 0;
   }
 
+  .pad-top {
+    margin-top: 20%;
+  }
+
 
 }
+
+
+@media only screen and (min-width: 320px) and (max-width: 413px) {
+  .pad-top {
+    margin-top: -20%;
+  }
+
+  .n-intro-desc {
+    padding-bottom: 25%;
+  }
+
+  .pad-bottom {
+    margin-bottom: 0;
+  }
+
+  #escapes .pad-top {
+    margin-top: -15%;
+  }
+
+  #neuron-hero-top-bg, #escapes-hero-top-bg, #vault-hero-top-bg, #planime-hero-top-bg {
+    position: relative;
+    height: 70vh;
+  }
+
+
+
+}
+
+@media only screen and (min-width: 414px) and (max-width: 567px) {
+  .pad-top {
+      margin-top: -35%;
+  }
+
+  .pad-bottom {
+    margin-bottom: 20%;
+  }
+
+  #neuron-hero-top-bg, #escapes-hero-top-bg, #vault-hero-top-bg, #planime-hero-top-bg {
+    position: relative;
+    height: 70vh;
+  }
+}
+
 
 /* Md Tablet */
 
@@ -303,6 +310,10 @@
   .top-des {
     left: 0;
 
+  }
+
+  #nav-projects {
+    position: absolute;
   }
 
   #neuron-hero-top-bg, #escapes-hero-top-bg, #vault-hero-top-bg, #planime-hero-top-bg {
@@ -332,7 +343,7 @@
   }
 
   .pad-top {
-    margin-top: 20%;
+    margin-top: 12%;
   }
 
   ul.project-list {
