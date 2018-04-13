@@ -149,7 +149,7 @@ h1, h2, h3 {
 
 
 header {
-  padding-top: 50px;
+  padding-top: 5%;
   background: transparent;
   position: fixed;
   top: 0;
@@ -1549,6 +1549,14 @@ div.escapes-colors-image {
   display: inline;
 }
 
+#close-mobile {
+  display: none;
+}
+
+#close-mobile {
+  padding-left: 30px;
+}
+
 div.icon-back {
   line-height: 0.5;
   transition: margin-left 0.5s ease;
@@ -1674,6 +1682,8 @@ img.img-full-wth {
   left: 10%;
   padding-top: 10%;
 }
+
+
 
 /* .clearfix:after {
     content: ".";

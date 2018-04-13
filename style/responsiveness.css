@@ -33,12 +33,12 @@
     position: absolute;
   }
 
-  .icon-back {
+  #back-desk {
     display: none;
   }
 
-  div.icon-back {
-    position: absolute;
+  #close-mobile {
+    display: block;
   }
 
   div.b-link {
@@ -316,6 +316,14 @@
     position: absolute;
   }
 
+  #back-desk {
+    display: none;
+  }
+
+  #close-mobile {
+    display: block;
+  }
+
   #neuron-hero-top-bg, #escapes-hero-top-bg, #vault-hero-top-bg, #planime-hero-top-bg {
     position: relative;
     height: 100vh;
@@ -419,16 +427,17 @@
     margin-top: -35%;
   }
 
-  .icon-back {
-    display: none;
-  }
-
-  div.icon-back {
+  #nav-projects {
     position: absolute;
   }
 
-  div.b-link {
-    margin-left: 15px;
+  #back-desk {
+    display: none;
+  }
+
+  #close-mobile {
+    display: block;
+    padding-left: 0;
   }
 
   /* Escapes */
@@ -575,6 +584,8 @@
 
 }
 
+
+
 @media only screen and (min-width: 1200px) and (max-width: 1300px) {
   .main-block {
     margin-top: 32%;
@@ -584,4 +595,24 @@
     padding-bottom: 25%;
   }
 
+}
+
+/* iPad Pro */
+
+@media only screen
+  and (min-device-width: 1024px)
+  and (max-device-width: 1366px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    #nav-projects {
+      position: absolute;
+    }
+
+    #back-desk {
+      display: none;
+    }
+
+    #close-mobile {
+      display: block;
+      padding-left: 0;
+    }
 }
