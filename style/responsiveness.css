@@ -1,5 +1,37 @@
 
 /* Home Page */
+
+@media only screen and (min-width: 320px) and (max-width: 413px) {
+  .pad-top {
+    margin-top: -20%;
+  }
+
+  .n-intro-desc {
+    padding-bottom: 25%;
+  }
+
+  .pad-bottom {
+    margin-bottom: 0;
+  }
+
+  #escapes .pad-top {
+    margin-top: -15%;
+  }
+
+
+
+}
+
+@media only screen and (min-width: 414px) and (max-width: 597px) {
+  .pad-top {
+      margin-top: -35%;
+  }
+
+  .pad-bottom {
+    margin-bottom: 20%;
+  }
+}
+
 @media only screen and (max-width: 598px) {
 
   /* Home  */
@@ -115,13 +147,13 @@
     left: 0;
   }
 
-  .pad-top {
+  /* .pad-top {
     margin-top: -150px;
-  }
+  } */
 
-  .pad-bottom {
+  /* .pad-bottom {
     margin-bottom: 0;
-  }
+  } */
 
 
   .main-block {
@@ -142,12 +174,12 @@
     display: none;
   }
 
-
   div.neuron-brand-image {
     padding: 0;
-    border: 30px solid black;
-    border-radius: 25px;
-    content: url(../images/neuron-brand.png);
+    border: 0;
+    border-radius: 3px;
+    content: url('../images/neuron-brand.png');
+    box-shadow: 0px 0px 38px 14px rgba(0,0,0,0.1);
   }
 
   .brand-image {
@@ -159,13 +191,6 @@
     margin-top: 25px;
   }
 
-  .n-intro-desc {
-    min-height: 680px;
-  }
-
-  .es-intro-desc {
-    min-height: 630px;
-  }
 
 
   div.persona {
