@@ -18,11 +18,16 @@
     margin-top: -15%;
   }
 
+  #neuron-hero-top-bg, #escapes-hero-top-bg, #vault-hero-top-bg, #planime-hero-top-bg {
+    position: relative;
+    height: 70vh;
+  }
+
 
 
 }
 
-@media only screen and (min-width: 414px) and (max-width: 597px) {
+@media only screen and (min-width: 414px) and (max-width: 567px) {
   .pad-top {
       margin-top: -35%;
   }
@@ -30,9 +35,14 @@
   .pad-bottom {
     margin-bottom: 20%;
   }
+
+  #neuron-hero-top-bg, #escapes-hero-top-bg, #vault-hero-top-bg, #planime-hero-top-bg {
+    position: relative;
+    height: 70vh;
+  }
 }
 
-@media only screen and (max-width: 598px) {
+@media only screen and (max-width: 568px) {
 
   /* Home  */
 
@@ -136,7 +146,7 @@
 
   #neuron-hero-top-bg, #escapes-hero-top-bg, #vault-hero-top-bg, #planime-hero-top-bg {
     position: relative;
-    height: 70vh;
+    /* height: 70vh; */
   }
 
   #planime-intro .extra-pad-left {
@@ -147,22 +157,13 @@
     left: 0;
   }
 
-  /* .pad-top {
-    margin-top: -150px;
-  } */
-
-  /* .pad-bottom {
-    margin-bottom: 0;
-  } */
-
-
   .main-block {
     margin-top: 35%;
   }
 
 
   .sub-text {
-    margin-top: 10%;
+    margin-top: 5%;
     line-height: 1.5em;
   }
 
@@ -304,8 +305,34 @@
 
   }
 
-  #neuron-top-image {
+  #neuron-hero-top-bg, #escapes-hero-top-bg, #vault-hero-top-bg, #planime-hero-top-bg {
+    position: relative;
+    height: 100vh;
+  }
+
+  .icon-back {
     display: none;
+  }
+
+  div.b-link {
+    margin-left: 15px;
+  }
+
+  .extra-pad-side {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  div.neuron-brand-image {
+    padding: 0;
+    border: 0;
+    border-radius: 3px;
+    content: url('../images/neuron-brand.png');
+    box-shadow: 0px 0px 38px 14px rgba(0,0,0,0.1);
+  }
+
+  .pad-top {
+    margin-top: 20%;
   }
 
   ul.project-list {
@@ -318,13 +345,6 @@
 
   div.solutions {
     display: none;
-  }
-
-  div.neuron-brand-image {
-    padding: 0;
-    border: 30px solid black;
-    border-radius: 25px;
-    content: url(../images/neuron-brand.png);
   }
 
   .brand-image {
@@ -349,13 +369,22 @@
 
 }
 
+/* iPhoneX */
+
+
+
+/* @media only screen and (min-width: 812px) and (max-width: 767px) {
+
+} */
+
+
 /* Tablet */
 
 @media only screen and (min-width: 768px) and (max-width: 1070px) {
 
   #neuron-hero-top-bg, #escapes-hero-top-bg, #vault-hero-top-bg, #planime-hero-top-bg {
     position: relative;
-    height: 50vh;
+    height: 80vh;
   }
 
   .top-des {
@@ -376,7 +405,19 @@
 
 
   .pad-top {
-    margin-top: -280px;
+    margin-top: -35%;
+  }
+
+  .icon-back {
+    display: none;
+  }
+
+  div.icon-back {
+    position: absolute;
+  }
+
+  div.b-link {
+    margin-left: 15px;
   }
 
   /* Escapes */
@@ -451,7 +492,54 @@
     padding-left: 5%;
   }
 
+  div.neuron-brand-image {
+    padding: 0;
+    border: 0;
+    border-radius: 3px;
+    content: url('../images/neuron-brand.png');
+    box-shadow: 0px 0px 38px 14px rgba(0,0,0,0.1);
+  }
+
 }
+
+/* iPhoneX */
+
+@media only screen
+    and (min-device-width: 375px)
+    and (max-device-width: 812px)
+    and (-webkit-device-pixel-ratio : 3)
+    and (orientation: landscape)    {
+
+        .icon-back {
+          display: none;
+        }
+
+        div.icon-back {
+          position: absolute;
+        }
+
+        div.b-link {
+          margin-left: 15px;
+        }
+
+        #neuron-hero-top-bg, #escapes-hero-top-bg, #vault-hero-top-bg, #planime-hero-top-bg {
+          position: relative;
+          height: 100vh;
+        }
+
+        .extra-pad-side {
+            margin-left: 0;
+            margin-right: 0;
+        }
+
+        div.neuron-brand-image {
+          padding: 0;
+          border: 0;
+          border-radius: 3px;
+          content: url('../images/neuron-brand.png');
+          box-shadow: 0px 0px 38px 14px rgba(0,0,0,0.1);
+        }
+    }
 
 @media only screen and (min-width: 1071px) and (max-width: 1199px) {
 
