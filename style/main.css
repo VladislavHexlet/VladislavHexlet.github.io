@@ -942,7 +942,7 @@ footer {
   margin-right: 0;
   width: 100%;
   /* background: linear-gradient(rgba(8, 38, 49, 0.96), rgba(8, 21, 27, 0.8)), url('../images/neuron/hero-bg.jpg') no-repeat; */
-  background: -webkit-linear-gradient(rgba(8, 38, 49, 0.96), rgba(8, 21, 27, 0.8)), url('../images/neuron/hero-bg.jpg') no-repeat;
+  background: -webkit-linear-gradient(rgba(8, 38, 49, 0.96), rgba(8, 21, 27, 0.8));
   background:   -moz-linear-gradient(rgba(8, 38, 49, 0.96), rgba(8, 21, 27, 0.8)), url('../images/neuron/hero-bg.jpg') no-repeat;
   background:     -ms-linear-gradient(rgba(8, 38, 49, 0.96), rgba(8, 21, 27, 0.8)), url('../images/neuron/hero-bg.jpg') no-repeat;
   background:       -o-linear-gradient(rgba(8, 38, 49, 0.96), rgba(8, 21, 27, 0.8)), url('../images/neuron/hero-bg.jpg') no-repeat;
