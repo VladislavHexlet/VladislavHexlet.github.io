@@ -6,6 +6,19 @@
 
   /* Home  */
 
+  .nav-down {
+    padding-top: 10%;
+    width: 100vw;
+  }
+
+  .nav-menu {
+    display: none;
+  }
+
+  /* .extra-pad-side-nav {
+    margin: 0;
+  } */
+
   .box-left, .box-right {
     display: none;
   }
