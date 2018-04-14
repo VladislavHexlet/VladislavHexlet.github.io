@@ -69,6 +69,14 @@
 
   }
 
+  .email-title, .email-content {
+    font-size: 0.5em;
+  }
+
+  .email-line {
+    max-width: 250px;
+  }
+
   .splash-icon {
     display: grid;
   }

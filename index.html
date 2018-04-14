@@ -23,7 +23,14 @@
   </head>
 
   <body id="home-bg" class="lock-screen">
-    <div id="loader"></div>
+    <!-- <div id="loader" class="loader">
+      <div class="loader-bg"></div>
+    </div> -->
+    <div class="wrapper-progress" id="loader">
+      <div class="progress">
+        <div class="inter"></div>
+      </div>
+    </div>
       <header class="nav-menu-top">
         <div class="container-fluid extra-pad-side-nav">
             <div class="col-xs-3 col-md-8">
@@ -142,8 +149,9 @@
     </section>
     <footer class="container-fluid extra-pad-side">
       <div class="row">
-        <p class="email">anna@annaprh.com</p>
-        <p class="email-des">Contact me for an appointment, a project, or a cup of coffee</p>
+        <div class="email-line"></div>
+        <p class="email-title">Contact us for an appointment, a project, or a cup of coffee!</p>
+        <a href="mailto:anna@annaprh.com" class="email-content">anna@annaprh.com</a>
       </div>
     </footer>
 
