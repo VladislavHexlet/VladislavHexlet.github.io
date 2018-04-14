@@ -144,12 +144,13 @@ header {
   top: 0;
   right: 0;
   left: 0;
-  transition: top 0.2s ease-in-out;
+  transition: transform 0.3s ease-in-out;
   z-index: 2;
+  will-change: transform;
 
 }
 
-.nav-down {
+.nav-menu-top {
   padding-top: 4%;
 }
 
@@ -158,7 +159,8 @@ header {
 }
 
 .nav-up {
-  top: -100px;
+  -webkit-transform: translateY(-110%);
+  transform: translateY(-110%)
 }
 
 .navigation-bar {

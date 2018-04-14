@@ -5,16 +5,25 @@
 @media only screen and (max-width: 568px) {
 
   /* Home  */
-  .nav-down {
+  .nav-menu-top {
     position: absolute;
   }
 
-  .nav-down {
+  .nav-menu-top {
     padding-top: 5%;
     width: 100vw;
   }
 
   .nav-menu {
+    display: none;
+  }
+
+  .inner-but {
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    padding: 5px 8px 5px 8px;
+  }
+
+  .icon-right {
     display: none;
   }
 
@@ -81,7 +90,7 @@
 
 
   .project {
-    margin-top: 10%;
+    margin-top: 0%;
   }
 
   .project-title {
@@ -275,7 +284,7 @@
 
 @media only screen and (min-width: 320px) and (max-width: 413px) {
 
-  .nav-down {
+  .nav-menu-top {
     padding-top: 10%;
   }
 
@@ -306,7 +315,7 @@
 
 @media only screen and (min-width: 414px) and (max-width: 567px) {
 
-  .nav-down {
+  .nav-menu-top {
     padding-top: 10%;
   }
 
@@ -329,7 +338,7 @@
 
 @media only screen and (min-width: 599px) and (max-width: 767px) {
 
-  .nav-down {
+  .nav-menu-top {
     width: 100vw;
     position: absolute;
     padding-top: 5%;
@@ -455,11 +464,11 @@
 
 @media only screen and (min-width: 768px) and (max-width: 1070px) {
 
-  .nav-down {
+  .nav-menu-top {
     position: absolute;
   }
 
-  .nav-down {
+  .nav-menu-top {
     padding-top: 10%;
     width: 100vw;
   }
@@ -597,7 +606,7 @@
     and (-webkit-device-pixel-ratio : 3)
     and (orientation: landscape)    {
 
-        .nav-down {
+        .nav-menu-top {
           position: absolute;
           padding-top: 5%;
         }
