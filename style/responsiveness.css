@@ -92,7 +92,7 @@
 
   .neuron-image, .vault-image, .planime-image, .escapes-image  {
     margin-left: 0;
-    height: 250px;
+    height: 300px;
     background-position: center;
   }
 
@@ -118,6 +118,9 @@
 
 
   .project {
+    padding-left: 0;
+    padding-right: 0;
+    margin-bottom: 30%;
     margin-top: 20%;
   }
 
@@ -127,7 +130,7 @@
     font-size: 1em;
     min-width: 250px;
     top: 5%;
-    left: 5%
+
   }
 
   .first-title,
@@ -317,10 +320,10 @@
 
   }
 
-  .project {
+  /* .project {
     padding-left: 30px;
     padding-right: 30px;
-  }
+  } */
 
   .inner-but {
     border: 1px solid rgba(255, 255, 255, 0.5);
