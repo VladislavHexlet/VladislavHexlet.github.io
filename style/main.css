@@ -115,6 +115,11 @@ h1, h2, h3 {
   float: left;
 }
 
+/* .logo-content {
+  -webkit-transition: all 0.3 ease-in-out;
+  transition: all 0.3 ease-in-out;
+} */
+
 /* Home Bg */
 
 .homepage-hero-module {
