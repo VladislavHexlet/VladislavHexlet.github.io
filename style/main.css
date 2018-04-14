@@ -306,7 +306,7 @@ a:hover {
   font-size: 12px;
   text-transform: uppercase;
   letter-spacing: 1.5px;
-  color: #6F7171;
+  color: #585F63;
   font-weight: 400;
 }
 
@@ -374,7 +374,7 @@ a:hover {
 
 .escapes-image {
   opacity: 0;
-  background: url('../images/thomas@2x.png') no-repeat;
+  background: url('../images/escapes/cover.png') no-repeat;
   margin-left: 150px;
   background-size: contain;
   transition: all .8s;
@@ -814,125 +814,6 @@ footer {
   font-family: 'Work Sans', Arial, sans-serif;
 }
 
-/* Responsiveness */
-
-/* @media only screen and (max-width: 598px) {
-
-  .hero-title {
-    font-size: 1em;
-    line-height: 1em;
-  }
-
-  .project {
-    margin-top: 20%;
-  }
-
-  .project-title {
-    padding: 0;
-    margin: 5%;
-    font-size: 1em;
-    min-width: 250px;
-    margin-top: 2%;
-  }
-
-  .first-title,
-  .second-title {
-    margin-top: 0;
-    margin-bottom: 0;
-  }
-
-  .project-title .first-title {
-    margin-top: 5%;
-    margin-bottom: 0;
-  }
-
-  .view-but {
-    margin-top: 0;
-  }
-
-  .project-title h2 {
-    line-height: 1.5;
-  }
-
-  .but-text {
-    -webkit-transform: matrix(1, 0, 0, 1, 0, 0);
-    font-size: 10px;
-  }
-
-  .neuron-image, .vault-image, .planime-image, .escapes-image {
-    height: 200px;
-    margin-left: 0;
-  }
-
-  .pretitle, .box-left, .box-right {
-    display: none;
-  }
-
-} */
-
-/* @media only screen and (min-width: 599px) and (max-width: 868px) {
-
-  .box-left, .box-right {
-    display: none;
-  }
-
-  .left-shift, .right-shift {
-    margin-left: 0;
-  }
-
-  .col-sm-6 {
-    width: 100%;
-
-  }
-
-  .neuron-image, .vault-image, .planime-image, .escapes-image  {
-    margin-left: 0;
-  }
-
-
-} */
-
-/* @media only screen and (min-width: 869px) and (max-width: 1070px) {
-
-  .project-title {
-    margin-top: 2%;
-  }
-
-  .right-shift, .box-right {
-    margin-left: 40%;
-  }
-
-  .left-shift, .box-left {
-    margin-left: 0;
-  }
-
-  .neuron-image, .vault-image, .planime-image, .escapes-image {
-    width: 70%;
-
-  }
-
-  .neuron-image, .planime-image {
-    margin-left: 32%;
-  }
-
-  .vault-image, .escapes-image {
-    margin-left: 0;
-  }
-
-} */
-
-/* @media only screen and (min-width: 1071px) and (max-width: 1199px) {
-
-  .neuron-image, .vault-image, .planime-image, .escapes-image  {
-    width: 60%;
-
-  }
-
-  .neuron-image {
-    margin-left: 250px;
-  }
-
-} */
 
 /* Project page */
 
