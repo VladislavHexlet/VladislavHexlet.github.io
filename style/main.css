@@ -63,7 +63,7 @@ h1, h2, h3 {
 }
 
 .progress .inter {
-    background-color: #26a69a;
+    background-color: #bcc2c7;
 }
 
 .progress .inter::before {
@@ -367,9 +367,6 @@ a {
   text-decoration: none;
 } /* selected link */
 
-/* .nav-menu a:link {
-  color: #585F63;
-} */
 
 .nav-menu a:focus {
   color:#ffffff;

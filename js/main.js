@@ -6,7 +6,7 @@ $(function() {
   var lastScrollTop = 0;
   var delta = 5;
   var navbarHeight = $('header').outerHeight();
-  var projectHeight = $('#vault-cover').outerHeight();
+  var projectHeight = $('#neuron-cover').outerHeight();
 
   $(window).scroll(function(event){
       didScroll = true;
