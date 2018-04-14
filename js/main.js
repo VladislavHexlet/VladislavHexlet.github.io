@@ -12,13 +12,14 @@ $(function() {
       didScroll = true;
   });
 
-
-  setInterval(function() {
-      if (didScroll) {
-          hasScrolled();
-          didScroll = false;
-      }
-  }, 250);
+  if(screen.availWidth > 1366) {
+    setInterval(function() {
+        if (didScroll) {
+            hasScrolled();
+            didScroll = false;
+        }
+    }, 250);
+  }
 
   function hasScrolled() {
       var st = $(this).scrollTop();

@@ -9,21 +9,19 @@
 
 body {
   margin: 0;
-  background-color: #eef;
+  background-color: #000000;
   /* overflow-x: hidden !important; */
 }
 
 
 html, body {
-  /*
+  width: 100%;
   height: 100%;
-  margin: 0; */
-  background: #030303;
+  background: #000000;
   font-family: 'Work Sans', Arial, sans-serif;
   font-weight: 300;
   font-size: 16px;
   line-height: 1.5em;
-  /* color: #141315; */
 }
 
 svg {
@@ -42,6 +40,7 @@ h1, h2, h3 {
 }
 
 
+
 .load {
   opacity: 1 !important;
   transition: opacity 0.8s;
@@ -58,18 +57,9 @@ h1, h2, h3 {
 
 
 .hero-section {
-  /* width: 100%;
-  background: linear-gradient(rgba(0,0,0,1), rgba(0,0,0,.5)), url('../images/hero-image.jpg') no-repeat;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size:cover;
-  background-attachment: fixed;
-  height:100vh; */
-
   width: 100%;
   height: 100vh;
   position: relative;
-  /* background-color: #000; */
   overflow: hidden;
 }
 
@@ -188,6 +178,12 @@ header {
 
 .nav-menu {
   float: right;
+}
+
+.l-divider {
+  width: 1px;
+  height: 30px;
+  background-color: #ffffff;
 }
 
 

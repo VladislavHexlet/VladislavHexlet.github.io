@@ -5,9 +5,12 @@
 @media only screen and (max-width: 568px) {
 
   /* Home  */
+  .nav-down {
+    position: absolute;
+  }
 
   .nav-down {
-    padding-top: 10%;
+    padding-top: 5%;
     width: 100vw;
   }
 
@@ -15,9 +18,27 @@
     display: none;
   }
 
-  /* .extra-pad-side-nav {
+  .hero-title {
+    font-size: 1.5em;
+    line-height: 1em;
+    width: 100%;
+    margin: auto;
+    margin-top: 2%;
+  }
+
+  .hero-subtitle {
+    font-size: 0.4em;
+    letter-spacing: 1px;
+
+  }
+
+  .splash-icon {
+    display: grid;
+  }
+
+  .extra-pad-side-nav {
     margin: 0;
-  } */
+  }
 
   .box-left, .box-right {
     display: none;
@@ -32,7 +53,7 @@
   }
 
 
-  .neuron-image, .vault-image, .planeme-image, .escapes-image  {
+  .neuron-image, .vault-image, .planime-image, .escapes-image  {
     margin-left: 0;
     height: 250px;
     background-position: center;
@@ -58,10 +79,6 @@
     margin-left: 15px;
   }
 
-  .hero-title {
-    font-size: 1.2em;
-    line-height: 1em;
-  }
 
   .project {
     margin-top: 10%;
@@ -257,6 +274,11 @@
 
 
 @media only screen and (min-width: 320px) and (max-width: 413px) {
+
+  .nav-down {
+    padding-top: 10%;
+  }
+
   .pad-top {
     margin-top: -20%;
   }
@@ -283,6 +305,11 @@
 }
 
 @media only screen and (min-width: 414px) and (max-width: 567px) {
+
+  .nav-down {
+    padding-top: 10%;
+  }
+
   .pad-top {
       margin-top: -35%;
   }
@@ -302,6 +329,20 @@
 
 @media only screen and (min-width: 599px) and (max-width: 767px) {
 
+  .nav-down {
+    width: 100vw;
+    position: absolute;
+    padding-top: 5%;
+  }
+
+  .extra-pad-side-nav {
+    margin: 0;
+  }
+
+  .nav-menu {
+    display: none;
+  }
+
 
   .box-left, .box-right, .fake-block {
     display: none;
@@ -316,7 +357,7 @@
 
   }
 
-  .neuron-image, .thomas-image, .planeme-image, .escapes-image  {
+  .neuron-image, .thomas-image, .planime-image, .escapes-image  {
     margin-left: 0;
   }
 
@@ -414,6 +455,19 @@
 
 @media only screen and (min-width: 768px) and (max-width: 1070px) {
 
+  .nav-down {
+    position: absolute;
+  }
+
+  .nav-down {
+    padding-top: 10%;
+    width: 100vw;
+  }
+
+  .nav-menu {
+    display: none;
+  }
+
   #neuron-hero-top-bg, #escapes-hero-top-bg, #vault-hero-top-bg, #planime-hero-top-bg {
     position: relative;
     height: 80vh;
@@ -484,7 +538,7 @@
     margin-left: 0;
   }
 
-  .neuron-image, .thomas-image, .planeme-image, .escapes-image {
+  .neuron-image, .thomas-image, .planime-image, .escapes-image {
     width: 70%;
 
   }
@@ -542,6 +596,15 @@
     and (max-device-width: 812px)
     and (-webkit-device-pixel-ratio : 3)
     and (orientation: landscape)    {
+
+        .nav-down {
+          position: absolute;
+          padding-top: 5%;
+        }
+
+        .extra-pad-side-nav {
+          margin: 0;
+        }
 
         .icon-back {
           display: none;
@@ -615,7 +678,7 @@
 
 @media only screen and (min-width: 1071px) and (max-width: 1199px) {
 
-  .neuron-image, .thomas-image, .planeme-image, .escapes-image  {
+  .neuron-image, .thomas-image, .planime-image, .escapes-image  {
     width: 60%;
 
   }
