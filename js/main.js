@@ -6,7 +6,7 @@ $(function() {
   container: document.getElementById('bm'), // the dom element that will contain the animation
   renderer: 'svg',
   loop: true,
-  autoplay: true,
+  autoplay: false,
   path: 'js/data.json' // the path to the animation json
   });
 
