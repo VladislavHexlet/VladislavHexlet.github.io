@@ -7,7 +7,7 @@ $(function() {
   renderer: 'svg',
   loop: true,
   autoplay: false,
-  path: 'js/data.json' // the path to the animation json
+  path: 'js/data2.json' // the path to the animation json
   });
 
   var didScroll;

@@ -223,6 +223,7 @@ h1, h2, h3 {
 }
 
 .hero-des {
+  display: none;
   font-family: 'Work Sans', Arial, sans-serif;
   letter-spacing: 0.5px;
   width: 40%;
