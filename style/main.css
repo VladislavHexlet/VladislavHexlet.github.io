@@ -223,8 +223,12 @@ h1, h2, h3 {
 }
 
 .hero-des {
+  font-family: 'Work Sans', Arial, sans-serif;
   letter-spacing: 0.5px;
-  display: none;
+  width: 40%;
+  margin: auto;
+  margin-top: 2%;
+  color: #a7afb3;
 
 }
 
@@ -1561,7 +1565,7 @@ div.escapes-colors-image {
 }
 
 #planime-intro .extra-pad-left {
-  padding-left: 0;
+  padding-left: 10%;
 }
 
 #planime-wrapper {
