@@ -29,14 +29,14 @@ svg {
 }
 
 p, ul {
+  -webkit-font-smoothing: antialiased;
   font-family: 'droid_serifregular', Arial, sans-serif;
-  /* font-family: 'Work Sans', Arial, sans-serif; */
 
 }
 
 h1, h2, h3 {
+  -webkit-font-smoothing: antialiased;
   font-family: 'Work Sans', Arial, sans-serif;
-  /* font-family: 'droid_serifregular', Arial, sans-serif; */
 }
 
 
@@ -695,52 +695,6 @@ div.icon-right {
   -webkit-animation-iteration-count: 1;
 }
 
-
-/* .neuron-image.current {
-    opacity: 1;
-    animation-name: fadeIn;
-    -webkit-animation-name: fadeIn;
-    animation-duration: 3s;
-    -webkit-animation-duration: 3s;
-    visibility: visible !important;
-} */
-
-
-/* @keyframes fadeIn {
-	from {
-    opacity: 0;
-    -webkit-transform: translate3d(0, -100%, 0);
-    transform: translate3d(0, -100%, 0);
-	}
-	to {
-    opacity: 1;
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-	}
-} */
-
-/* @keyframes fadeIn {
-    0% {
-        animation-timing-function: ease-out;
-        opacity: 0.0;
-    }
-
-    100% {
-        animation-timing-function: ease-in;
-        opacity: 1;
-    }
-}
-
-@-webkit-keyframes fadeIn {
-    0% {
-        opacity: 0.0;
-    }
-
-    100% {
-        opacity: 1;
-    }
-} */
-
 .fadeInDown {
   opacity: 0;  /* make things invisible upon start */
   -webkit-animation:fadeInDown ease-out 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
@@ -914,7 +868,88 @@ div.icon-right {
 
 }
 
+/* About */
 
+.abt-title-who, .abt-title-pr {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: #B9BFBF;
+  font-weight: 400;
+  overflow: hidden;
+}
+
+.abt-title-who::after, .abt-title-pr::after {
+  content: "";
+  display: inline-block;
+  height: 0.3em;
+  width: 6%;
+  margin-right: -100%;
+  margin-left: 18px;
+  border-top: 0.5px solid #4F4F54;
+}
+
+.we-are-text {
+  color: #d4d6d6;
+  padding: 6%;
+  margin-top: 15%;
+  border: 0.5px solid #4F4F5480;
+}
+
+.abt-title-what {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: #B9BFBF;
+  font-weight: 400;
+  text-align: right;
+  overflow: hidden;
+}
+
+.abt-title-what::before {
+  content: "";
+  display: inline-block;
+  height: 0.3em;
+  width: 6%;
+  margin-right: 18px;
+  border-top: 0.5px solid #4F4F54;
+  vertical-align: middle;
+}
+
+.serv-list {
+  list-style-type: none;
+  -webkit-padding-start: 0;
+}
+
+.serv-title, .pr-title {
+  font-size: 1.2em;
+  font-weight: 600;
+  color: #FFFFFF;
+}
+
+.pr-text {
+  font-size: 0.95em;
+  line-height: 2em;
+  color: #909090;
+}
+
+.serv-list-item {
+  font-size: 0.95em;
+  line-height: 2em;
+  color: #909090;
+}
+
+.fl-right {
+  float: right;
+}
+
+.ic-designres {
+  width: 300px;
+  height: 300px;
+  /* background-color: grey; */
+  margin-left: 5%;
+
+}
 
 
 /* Footer Style */
@@ -935,6 +970,7 @@ footer {
 .email-title {
   font-family: 'Work Sans', Arial, sans-serif;
   font-size: 0.8em;
+  font-weight: 400;
   color: #FFFFFF;
   letter-spacing: 0.5px;
   margin-top: 5%;
@@ -1550,7 +1586,7 @@ div.escapes-colors-image {
 }
 
 .mg-center {
-  margin: 0;
+  margin: 0 auto;
 }
 
 .fake-block {
@@ -1600,6 +1636,19 @@ div.escapes-colors-image {
 .extra-pad-top {
   margin-top: 5%;
 }
+
+.lg-extra-pad-top {
+  margin-top: 15%;
+}
+
+.lg-extra-pad-side {
+  margin-right: 10%;
+}
+
+.about-extra-pad-top {
+  margin-top: 20%;
+}
+
 
 .t-inline {
   display: inline;
