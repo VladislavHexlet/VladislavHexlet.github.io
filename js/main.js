@@ -5,7 +5,7 @@ $(function() {
   lottie.loadAnimation({
   container: document.getElementById('bm'), // the dom element that will contain the animation
   renderer: 'svg',
-  loop: true,
+  loop: false,
   autoplay: true,
   path: 'js/data.json' // the path to the animation json
   });
