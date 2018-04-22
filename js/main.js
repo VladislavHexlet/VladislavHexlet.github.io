@@ -2,14 +2,6 @@
 
 $(function() {
 
-  lottie.loadAnimation({
-  container: document.getElementById('bm'), // the dom element that will contain the animation
-  renderer: 'svg',
-  loop: false,
-  autoplay: true,
-  path: 'js/data.json' // the path to the animation json
-});
-
   var didScroll;
   var lastScrollTop = 0;
   var delta = 5;
@@ -62,7 +54,7 @@ $(function() {
 
   var scrollMagicController = new ScrollMagic.Controller();
 
-  function animate(elementId) {
+  function animateProjectBlock(elementId) {
     var scene = new ScrollMagic.Scene({
       triggerElement: elementId,
       reverse: false
@@ -108,10 +100,10 @@ $(function() {
       $('.hero-title').addClass('fadeInUp');
 
       // Init ScrollMagic Controller
-      animate('#neuron-cover');
-      animate('#vault-cover');
-      animate('#planime-cover');
-      animate('#escapes-cover');
+      animateProjectBlock('#neuron-cover');
+      animateProjectBlock('#vault-cover');
+      animateProjectBlock('#planime-cover');
+      animateProjectBlock('#escapes-cover');
     }, 1000);
   });
 
@@ -136,6 +128,27 @@ $(function() {
         overwrite: 5
       });
   });
+
+  var researchAnimation = lottie.loadAnimation({
+    container: document.getElementById('bm'), // the dom element that will contain the animation
+    renderer: 'svg',
+    loop: false,
+    autoplay: false,
+    path: 'js/data.json' // the path to the animation json
+  });
+
+
+  function animateOurProcess(animation) {
+    var scene = new ScrollMagic.Scene({
+      triggerElement: elementId,
+      reverse: false
+    });
+    scene.on('start', function() {
+      animation.play();
+    }).addTo(scrollMagicController);
+  }
+
+  animateOurProcess(researchAnimation);
 
 }());
 
