@@ -549,7 +549,7 @@ div.icon-right {
     0% {
       opacity: 0;
       animation-timing-function: cubic-bezier(.16,0,.64,1);
-      -webkit-transform: translateX(-50px);
+      -webkit-transform: translateX(-70px);
       transform: translateX(-70px);
     }
 
@@ -582,6 +582,36 @@ div.icon-right {
   63%, 100% {
     animation-timing-function: ease-in;
     min-width: 450px;
+  }
+}
+
+/* Scale Process Box Animation*/
+
+@keyframes scaleUpProcessBox {
+  0% {
+    animation-timing-function: ease;
+    height: 85px;
+  }
+
+  100% {
+    animation-timing-function: ease;
+    height: 200px;
+  }
+}
+
+@keyframes fadeInUpProcessBox {
+  0% {
+    opacity: 0;
+    animation-timing-function: cubic-bezier(.16,0,.64,1);
+    -webkit-transform: translateY(70px);
+    transform: translateY(70px);
+  }
+
+  100% {
+    opacity: 1;
+    animation-timing-function: ease-out;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
   }
 }
 
@@ -682,11 +712,11 @@ div.icon-right {
 
 .fadeInDown {
   opacity: 0;  /* make things invisible upon start */
-  -webkit-animation:fadeInDown ease-out 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+  -webkit-animation:fadeInDown ease-out 1;
   -moz-animation:fadeInDown ease-out 1;
   animation:fadeInDown ease-out 1;
 
-  -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+  -webkit-animation-fill-mode:forwards;
   -moz-animation-fill-mode:forwards;
   animation-fill-mode:forwards;
 
@@ -744,6 +774,53 @@ div.icon-right {
   -webkit-animation:fadeInLeft cubic-bezier(.18,0,.7,.93) 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
   -moz-animation:fadeInLeft cubic-bezier(.18,0,.7,.93) 1;
   animation:fadeInLeft cubic-bezier(.18,0,.7,.93) 1;
+
+  -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+  -moz-animation-fill-mode:forwards;
+  animation-fill-mode:forwards;
+
+  animation-delay: 0.5s;
+
+  -webkit-animation-duration:0.8s;
+  -moz-animation-duration:0.8s;
+  animation-duration:0.8s;
+}
+
+/* FadeInLeft Process Text */
+
+@keyframes fadeInLeftProcess {
+  from {
+    opacity: 0;
+    -webkit-transform: translateX(-20px);
+    transform: translateX(-20px);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+@-webkit-keyframes fadeInLeftProcess {
+  from {
+    opacity: 0;
+    -webkit-transform: translateX(-5px);
+    transform: translateX(-5px);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+.fadeInLeftProcess {
+  opacity: 0;  /* make things invisible upon start */
+  -webkit-animation:fadeInLeftProcess cubic-bezier(.18,0,.7,.93) 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+  -moz-animation:fadeInLeftProcess cubic-bezier(.18,0,.7,.93) 1;
+  animation:fadeInLeftProcess cubic-bezier(.18,0,.7,.93) 1;
 
   -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
   -moz-animation-fill-mode:forwards;
@@ -934,6 +1011,30 @@ div.icon-right {
   /* background-color: grey; */
   margin-left: 5%;
 
+}
+
+/* .process-textbox {
+  opacity: 0;
+} */
+
+.process-text {
+  opacity: 0;
+}
+
+.research-box {
+  opacity: 0;
+  position: absolute;
+  bottom: 15%;
+  border: solid 3px #250B06;
+  width: 490px;
+  height: 85px;
+}
+
+.process-text-animated {
+  opacity: 1;
+  height: 200px;
+  animation-duration: 1.5s;
+  animation-name: scaleUpProcessBox, fadeInUpProcessBox;
 }
 
 #bm svg {
