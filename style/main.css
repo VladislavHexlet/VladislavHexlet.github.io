@@ -1576,8 +1576,12 @@ div.escapes-colors-image {
   z-index: 9999;
 }
 
-.z-low {
+.z-one {
   z-index: 1;
+}
+
+.z-two {
+  z-index: 2;
 }
 
 .pad-zero {
