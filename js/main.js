@@ -148,10 +148,12 @@ $(function() {
 
     var tween1 = TweenMax.to(triggerElement + ' .process-textbox', 0.01, {css:{className:"+=process-text-animated"}});
     var tween2 = TweenMax.fromTo(triggerElement + ' .process-text', 1, {autoAlpha:0}, {autoAlpha:1, delay:1});
+    var tween3 = TweenMax.fromTo('#bm', 1, {autoAlpha:0}, {autoAlpha:1});
 
     timeline
-          .add(tween1)
+          .add(tween3)
           .add(function() { animation.play() })
+          .add(tween1)
           .add(tween2);
 
     scene.setTween(timeline);
