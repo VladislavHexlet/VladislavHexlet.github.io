@@ -151,8 +151,8 @@ $(function() {
     var tween3 = TweenMax.fromTo('#bm', 1, {autoAlpha:0}, {autoAlpha:1});
 
     timeline
-          .add(tween3)
           .add(function() { animation.play() })
+          .add(tween3)
           .add(tween1)
           .add(tween2);
 
