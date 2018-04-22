@@ -138,9 +138,9 @@ $(function() {
   });
 
 
-  function animateOurProcess(animation) {
+  function animateOurProcess(animation, triggerElement) {
     var scene = new ScrollMagic.Scene({
-      triggerElement: elementId,
+      triggerElement: triggerElement,
       reverse: false
     });
     scene.on('start', function() {
@@ -148,7 +148,7 @@ $(function() {
     }).addTo(scrollMagicController);
   }
 
-  animateOurProcess(researchAnimation);
+  animateOurProcess(researchAnimation, '#research');
 
 }());
 
