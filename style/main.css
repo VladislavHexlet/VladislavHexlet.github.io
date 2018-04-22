@@ -1039,7 +1039,7 @@ div.icon-right {
 .process-text-animated {
   opacity: 1;
   min-height: 220px;
-  animation-duration: 1.5s;
+  animation-duration: 0.7s;
   animation-name: scaleUpProcessBox, fadeInUpProcessBox;
 }
 
