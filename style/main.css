@@ -1039,6 +1039,12 @@ div.icon-right {
 
 #bm svg {
   position: absolute;
+  top: -40px;
+  bottom: 10%;
+  left: -25%;
+  right: 0;
+  width: 130%;
+  height: 130%;
 }
 
 
