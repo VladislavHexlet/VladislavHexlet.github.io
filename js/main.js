@@ -2,13 +2,13 @@
 
 $(function() {
 
-  // lottie.loadAnimation({
-  // container: document.getElementById('bm'), // the dom element that will contain the animation
-  // renderer: 'svg',
-  // loop: true,
-  // autoplay: true,
-  // path: 'js/data.json' // the path to the animation json
-  // });
+  lottie.loadAnimation({
+  container: document.getElementById('bm'), // the dom element that will contain the animation
+  renderer: 'svg',
+  loop: true,
+  autoplay: true,
+  path: 'js/data.json' // the path to the animation json
+  });
 
   var didScroll;
   var lastScrollTop = 0;
@@ -118,8 +118,8 @@ $(function() {
   //smooth scrolling
   var $window = $(window);		//Window object
 
-  var scrollTime = 0.9;			//Scroll time
-  var scrollDistance = 170;		//Distance. Use smaller value for shorter scroll and greater value for longer scroll
+  var scrollTime = 0.3;			//Scroll time
+  var scrollDistance = 95;		//Distance. Use smaller value for shorter scroll and greater value for longer scroll
 
   $window.on("mousewheel DOMMouseScroll", function(event){
 
