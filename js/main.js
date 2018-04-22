@@ -141,7 +141,8 @@ $(function() {
   function animateOurProcess(animation, triggerElement) {
     var scene = new ScrollMagic.Scene({
       triggerElement: triggerElement,
-      reverse: false
+      reverse: false,
+      triggerHook: 0.9
     }).addTo(scrollMagicController);
 
     var timeline = new TimelineMax();
