@@ -1029,10 +1029,11 @@ div.icon-right {
 .research-box {
   opacity: 0;
   position: absolute;
-  bottom: -2%;
+  bottom: 22%;
   border: solid 1px #42170f;
   min-width: 540px;
   min-height: 85px;
+  z-index: 3;
 }
 
 .process-text-animated {
@@ -1685,9 +1686,9 @@ div.escapes-colors-image {
 }
 
 .inner-center {
-  bottom: 0;
+  bottom: 25%;
   padding: 0;
-  top: 50%;
+  /* top: 50%; */
   margin-left: 3%;
 }
 
