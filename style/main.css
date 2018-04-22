@@ -590,12 +590,12 @@ div.icon-right {
 @keyframes scaleUpProcessBox {
   0% {
     animation-timing-function: ease;
-    height: 85px;
+    min-height: 85px;
   }
 
   100% {
     animation-timing-function: ease;
-    height: 215px;
+    min-height: 220px;
   }
 }
 
@@ -989,7 +989,12 @@ div.icon-right {
   color: #FFFFFF;
 }
 
+/* .pr-title {
+  opacity: 0;
+} */
+
 .pr-text {
+  /* opacity: 0; */
   font-size: 0.95em;
   line-height: 2em;
   color: #909090;
@@ -1024,15 +1029,15 @@ div.icon-right {
 .research-box {
   opacity: 0;
   position: absolute;
-  bottom: 22%;
+  bottom: -2%;
   border: solid 1px #42170f;
-  width: 510px;
-  height: 85px;
+  min-width: 540px;
+  min-height: 85px;
 }
 
 .process-text-animated {
   opacity: 1;
-  height: 215px;
+  min-height: 220px;
   animation-duration: 1.5s;
   animation-name: scaleUpProcessBox, fadeInUpProcessBox;
 }
@@ -1680,9 +1685,10 @@ div.escapes-colors-image {
 }
 
 .inner-center {
+  bottom: 0;
+  padding: 0;
   top: 50%;
-  left: 3%;
-  transform: translateY(-50%);
+  margin-left: 3%;
 }
 
 .t-centred {

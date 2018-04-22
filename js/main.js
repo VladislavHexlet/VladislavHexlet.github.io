@@ -104,6 +104,7 @@ $(function() {
       animateProjectBlock('#vault-cover');
       animateProjectBlock('#planime-cover');
       animateProjectBlock('#escapes-cover');
+      animateOurProcess(researchAnimation, '#research');
     }, 1000);
   });
 
@@ -149,18 +150,19 @@ $(function() {
 
     var tween1 = TweenMax.to(triggerElement + ' .process-textbox', 0.01, {css:{className:"+=process-text-animated"}});
     var tween2 = TweenMax.fromTo(triggerElement + ' .process-text', 1, {autoAlpha:0}, {autoAlpha:1, delay:1});
-    var tween3 = TweenMax.fromTo('#bm', 1, {autoAlpha:0}, {autoAlpha:1});
+    // var tween3 = TweenMax.fromTo(triggerElement + ' .pt-text', 1, {autoAlpha:0}, {autoAlpha:1, delay:1});
+    var tween4 = TweenMax.fromTo('#bm', 1, {autoAlpha:0}, {autoAlpha:1});
 
     timeline
           .add(function() { animation.play() })
-          .add(tween3)
+          .add(tween4)
           .add(tween1)
           .add(tween2);
+          //.add(tween3);
 
     scene.setTween(timeline);
   }
 
-  animateOurProcess(researchAnimation, '#research');
 
 }());
 
