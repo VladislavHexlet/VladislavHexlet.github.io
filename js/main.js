@@ -8,8 +8,6 @@ $(function() {
   loop: false,
   autoplay: true,
   path: 'js/data.json' // the path to the animation json
-}).onComplete(function(e) {
-  e.preventDefault();
 });
 
   var didScroll;
