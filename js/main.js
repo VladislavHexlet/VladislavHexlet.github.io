@@ -8,7 +8,9 @@ $(function() {
   loop: false,
   autoplay: true,
   path: 'js/data.json' // the path to the animation json
-  });
+}).on('end', function(e) {
+  e.preventDefault();
+});
 
   var didScroll;
   var lastScrollTop = 0;
