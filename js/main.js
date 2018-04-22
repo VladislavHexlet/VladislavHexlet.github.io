@@ -149,7 +149,7 @@ $(function() {
     var timeline = new TimelineMax();
 
     var tween1 = TweenMax.to(triggerElement + ' .process-textbox', 0.01, {css:{className:"+=process-text-animated"}});
-    var tween2 = TweenMax.fromTo(triggerElement + ' .process-text', 1, {autoAlpha:0}, {autoAlpha:1});
+    var tween2 = TweenMax.fromTo(triggerElement + ' .process-text', 1, {autoAlpha:0}, {autoAlpha:1, delay:1});
     // var tween3 = TweenMax.fromTo(triggerElement + ' .pt-text', 1, {autoAlpha:0}, {autoAlpha:1, delay:1});
     var tween4 = TweenMax.fromTo('#bm', 1, {autoAlpha:0}, {autoAlpha:0.5});
 
