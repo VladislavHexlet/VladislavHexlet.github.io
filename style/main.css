@@ -1006,8 +1006,8 @@ div.icon-right {
 }
 
 .ic-research {
-  width: 300px;
-  height: 300px;
+  width: 400px;
+  height: 400px;
   /* background-color: grey; */
   margin-left: 5%;
 
@@ -1024,7 +1024,7 @@ div.icon-right {
 .research-box {
   opacity: 0;
   position: absolute;
-  bottom: 15%;
+  bottom: 22%;
   border: solid 1px #42170f;
   width: 510px;
   height: 85px;
@@ -1039,12 +1039,11 @@ div.icon-right {
 
 #bm svg {
   position: absolute;
-  top: -40px;
-  bottom: 10%;
-  left: -25%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
   right: 0;
-  width: 130%;
-  height: 130%;
 }
 
 
