@@ -105,6 +105,16 @@ $(function() {
       animateProjectBlock('#planime-cover');
       animateProjectBlock('#escapes-cover');
       animateOurProcess(researchAnimation, '#research');
+
+      //parallax background
+       var tweenParallax = new TimelineMax()
+         .add([TweenMax.fromTo('.neuron-image', 1, {y: "0%", ease: Power0.easeNone}, {y: "10%", ease: Power0.easeNone})])
+
+         var scene = new ScrollMagic.Scene({
+           triggerElement: '#projects',
+           duration: '100%',
+           reverse: true,
+         }).setTween(tweenParallax).addTo(scrollMagicController);
     }, 1000);
   });
 
@@ -135,7 +145,7 @@ $(function() {
     renderer: 'svg',
     loop: false,
     autoplay: false,
-    path: 'js/data.json' // the path to the animation json
+    path: 'js/data2.json' // the path to the animation json
   });
 
 
@@ -162,6 +172,30 @@ $(function() {
 
     scene.setTween(timeline);
   }
+
+  // function createParallaxeBackground() {
+  //   var works = document.querySelector('#works-title-parallax');
+  //
+  //   var yPosition;
+  //   var xPosition;
+  //
+  //   function scrollLoop(e) {
+  //     xPosition = window.scrollX;
+  //     yPosition = window.scrollY;
+  //
+  //     setTranslate(0, yPosition * -0.15, works);
+  //
+  //     requestAnimationFrame(scrollLoop);
+  //   }
+  //
+  //   function setTranslate(xPos, yPos, el) {
+  //     el.style.transform = "translate3d(" + xPos + ", " + yPos + "px, 0";
+  //   }
+  //
+  //   scrollLoop();
+  //
+  // }
+  // createParallaxeBackground();
 
 
 }());

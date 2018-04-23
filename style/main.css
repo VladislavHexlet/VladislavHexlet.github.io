@@ -315,9 +315,6 @@ header {
 }
 
 
-
-
-
 li a {
   display: inline-block;
   float: left;
@@ -373,6 +370,22 @@ a:hover {
 }
 
 /* Portfolio */
+
+/* Works Title */
+
+#works-title-parallax {
+  background-image: url('../images/works-parallax.svg');
+  background-size: 60%;
+  background-repeat: no-repeat;
+  z-index: -10;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 50vw;
+  background-position: center right;
+}
+
+
 .project {
   margin-top: 20%;
 
@@ -1109,10 +1122,6 @@ footer {
 #text-intro.load {
   opacity: 1;
 }
-
-
-
-
 
 #nav-projects {
   /* position: unset; */
@@ -1874,13 +1883,6 @@ img.img-full-wth {
   height: 154px;
 }
 
-/* .img-frame::before {
-  content: " ";
-  display: inline-block;
-  height: 100%;
-  vertical-align: middle;
-} */
-
 .comet-ic {
   width: 70%;
 }
@@ -1909,26 +1911,3 @@ img.img-full-wth {
   left: 10%;
   padding-top: 10%;
 }
-
-
-
-/* .clearfix:after {
-    content: ".";
-    display: block;
-    clear: both;
-    visibility: hidden;
-    line-height: 0;
-    height: 0;
-}
-
-.clearfix {
-    display: inline-block;
-}
-
-html[xmlns] .clearfix {
-    display: block;
-}
-
-* html .clearfix {
-    height: 1%;
-} */
