@@ -142,7 +142,7 @@ $(function() {
 
   var researchAnimation = lottie.loadAnimation({
     container: document.getElementById('bm'), // the dom element that will contain the animation
-    renderer: 'svg',
+    renderer: 'html',
     loop: false,
     autoplay: false,
     path: 'js/data2.json' // the path to the animation json
