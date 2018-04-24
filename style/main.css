@@ -205,7 +205,7 @@ h1, h2, h3 {
 .hero-subtitle {
   font-size: 0.6em;
   text-transform: uppercase;
-  color: #536371;
+  color: #8e9faf;
   letter-spacing: 2px;
   margin-bottom: 0;
 }
@@ -1090,10 +1090,9 @@ footer {
 
 .email-title {
   font-family: 'Work Sans', Arial, sans-serif;
-  font-size: 0.8em;
+  font-size: 1em;
   font-weight: 400;
   color: #FFFFFF;
-  letter-spacing: 0.5px;
   margin-top: 5%;
 
 }
@@ -1102,7 +1101,7 @@ footer {
   color: #585F63;
   font-weight: 400;
   font-family: 'Work Sans', Arial, sans-serif;
-  font-size: 0.8em;
+  font-size: 1em;
 }
 
 .email-content a:visited {

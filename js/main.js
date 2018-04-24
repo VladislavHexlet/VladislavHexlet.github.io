@@ -104,7 +104,7 @@ $(function() {
       animateProjectBlock('#vault-cover');
       animateProjectBlock('#planime-cover');
       animateProjectBlock('#escapes-cover');
-      animateOurProcess(researchAnimation, '#research');
+      //animateOurProcess(researchAnimation, '#research');
 
       //parallax background
        // var tweenParallax = new TimelineMax()
