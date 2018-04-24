@@ -107,14 +107,14 @@ $(function() {
       animateOurProcess(researchAnimation, '#research');
 
       //parallax background
-       var tweenParallax = new TimelineMax()
-         .add([TweenMax.fromTo('.neuron-image', 1, {y: "0%", ease: Power0.easeNone}, {y: "10%", ease: Power0.easeNone})])
-
-         var scene = new ScrollMagic.Scene({
-           triggerElement: '#projects',
-           duration: '100%',
-           reverse: true,
-         }).setTween(tweenParallax).addTo(scrollMagicController);
+       // var tweenParallax = new TimelineMax()
+       //   .add([TweenMax.fromTo('.neuron-image', 1, {y: "0%", ease: Power0.easeNone}, {y: "10%", ease: Power0.easeNone})])
+       //
+       //   var scene = new ScrollMagic.Scene({
+       //     triggerElement: '#projects',
+       //     duration: '100%',
+       //     reverse: true,
+       //   }).setTween(tweenParallax).addTo(scrollMagicController);
     }, 1000);
   });
 
@@ -158,15 +158,14 @@ $(function() {
 
     var timeline = new TimelineMax();
 
-    var tween1 = TweenMax.to(triggerElement + ' .process-textbox', 0.01, {css:{className:"+=process-text-animated"}});
-    var tween2 = TweenMax.fromTo(triggerElement + ' .process-text', 1, {autoAlpha:0}, {autoAlpha:1, delay:0.5});
+    //var tween1 = TweenMax.to(triggerElement + ' .process-textbox', 0.01, {css:{className:"+=process-text-animated"}});
+    //var tween2 = TweenMax.fromTo(triggerElement + ' .process-text', 1, {autoAlpha:0}, {autoAlpha:1, delay:0.5});
     // var tween3 = TweenMax.fromTo(triggerElement + ' .pt-text', 1, {autoAlpha:0}, {autoAlpha:1, delay:1});
-    var tween4 = TweenMax.fromTo('#bm', 1, {autoAlpha:0}, {autoAlpha:0.5});
+    //var tween4 = TweenMax.fromTo('#bm', 1, {autoAlpha:0}, {autoAlpha:0.5});
 
     timeline
-          .add(function() { animation.play() })
+          //.add(function() { animation.play() })
           .add(tween4)
-          .add(tween1)
           .add(tween2);
           //.add(tween3);
 

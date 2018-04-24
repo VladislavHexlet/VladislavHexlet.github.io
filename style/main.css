@@ -2,7 +2,7 @@
 html, body {
   width: 100%;
   height: 100%;
-  background: #020303;
+  background: #0a0c0c;
   font-family: 'Work Sans', Arial, sans-serif;
   font-weight: 300;
   font-size: 16px;
@@ -24,7 +24,10 @@ h1, h2, h3 {
   font-family: 'Work Sans', Arial, sans-serif;
 }
 
-
+.nopadding {
+   padding: 0 !important;
+   margin: 0 !important;
+}
 
 .load {
   opacity: 1 !important;
@@ -240,7 +243,7 @@ h1, h2, h3 {
     height: 100%;
     width: 100%;
     overflow: hidden;
-    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,1)), url('../images/hero-image.png') no-repeat center;
+    background: linear-gradient(#0a0c0c80, #0a0c0c), url(../images/hero-image.png) no-repeat center;
     background-size: cover;
 }
 
@@ -991,6 +994,10 @@ div.icon-right {
   vertical-align: middle;
 }
 
+.serv-block:nth-child(2) {
+  padding-left: 5%;
+}
+
 .serv-list {
   list-style-type: none;
   -webkit-padding-start: 0;
@@ -1035,9 +1042,9 @@ div.icon-right {
   opacity: 0;
 } */
 
-.process-text {
+/* .process-text {
   opacity: 0;
-}
+} */
 
 .research-box {
   opacity: 0;
@@ -1315,7 +1322,7 @@ footer {
 /* Service List Style*/
 
 ul.project-list {
-  font-weight: 300;
+  font-weight: 500;
   color: #ffffff;
   text-transform: uppercase;
   letter-spacing: 1.5px;
@@ -1695,9 +1702,8 @@ div.escapes-colors-image {
 }
 
 .inner-center {
-  bottom: 25%;
   padding: 0;
-  /* top: 50%; */
+  top: 50%;
   margin-left: 3%;
 }
 
