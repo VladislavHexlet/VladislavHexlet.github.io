@@ -140,37 +140,37 @@ $(function() {
       });
   });
 
-  var researchAnimation = lottie.loadAnimation({
-    container: document.getElementById('bm'), // the dom element that will contain the animation
-    renderer: 'html',
-    loop: false,
-    autoplay: false,
-    path: 'js/data2.json' // the path to the animation json
-  });
+  // var researchAnimation = lottie.loadAnimation({
+  //   container: document.getElementById('bm'), // the dom element that will contain the animation
+  //   renderer: 'html',
+  //   loop: false,
+  //   autoplay: false,
+  //   path: 'js/data2.json' // the path to the animation json
+  // });
 
 
-  function animateOurProcess(animation, triggerElement) {
-    var scene = new ScrollMagic.Scene({
-      triggerElement: triggerElement,
-      reverse: false,
-      triggerHook: 0.9
-    }).addTo(scrollMagicController);
-
-    var timeline = new TimelineMax();
-
-    //var tween1 = TweenMax.to(triggerElement + ' .process-textbox', 0.01, {css:{className:"+=process-text-animated"}});
-    //var tween2 = TweenMax.fromTo(triggerElement + ' .process-text', 1, {autoAlpha:0}, {autoAlpha:1, delay:0.5});
-    // var tween3 = TweenMax.fromTo(triggerElement + ' .pt-text', 1, {autoAlpha:0}, {autoAlpha:1, delay:1});
-    //var tween4 = TweenMax.fromTo('#bm', 1, {autoAlpha:0}, {autoAlpha:0.5});
-
-    timeline
-          //.add(function() { animation.play() })
-          .add(tween4)
-          .add(tween2);
-          //.add(tween3);
-
-    scene.setTween(timeline);
-  }
+  // function animateOurProcess(animation, triggerElement) {
+  //   var scene = new ScrollMagic.Scene({
+  //     triggerElement: triggerElement,
+  //     reverse: false,
+  //     triggerHook: 0.9
+  //   }).addTo(scrollMagicController);
+  //
+  //   var timeline = new TimelineMax();
+  //
+  //   //var tween1 = TweenMax.to(triggerElement + ' .process-textbox', 0.01, {css:{className:"+=process-text-animated"}});
+  //   //var tween2 = TweenMax.fromTo(triggerElement + ' .process-text', 1, {autoAlpha:0}, {autoAlpha:1, delay:0.5});
+  //   // var tween3 = TweenMax.fromTo(triggerElement + ' .pt-text', 1, {autoAlpha:0}, {autoAlpha:1, delay:1});
+  //   //var tween4 = TweenMax.fromTo('#bm', 1, {autoAlpha:0}, {autoAlpha:0.5});
+  //
+  //   //timeline
+  //         //.add(function() { animation.play() })
+  //         //.add(tween4)
+  //         //.add(tween2);
+  //         //.add(tween3);
+  //
+  //   scene.setTween(timeline);
+  // }
 
   // function createParallaxeBackground() {
   //   var works = document.querySelector('#works-title-parallax');
