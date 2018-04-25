@@ -57,15 +57,13 @@
 
   .hero-title {
     font-size: 1.5em;
-    line-height: 1em;
     width: 100%;
-    margin: auto;
-    margin-top: 2%;
+    letter-spacing: 2px;
   }
 
   .hero-subtitle {
-    font-size: 0.4em;
-    letter-spacing: 1px;
+    font-size: 0.5em;
+    margin: 0;
 
   }
 

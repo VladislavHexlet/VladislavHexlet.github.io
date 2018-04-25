@@ -196,18 +196,19 @@ h1, h2, h3 {
 }
 
 .hero-title {
-  font-family: 'droid_serifbold', Arial, sans-serif !important;
+  font-family: 'Work Sans', Arial, sans-serif;
+  text-transform: uppercase;
+  /* font-family: 'droid_serifbold', Arial, sans-serif !important; */
   font-size: 2em;
-  letter-spacing: 1.5px;
-  margin-bottom: 0;
+  letter-spacing: 4px;
+  font-weight: 400;
+  margin: 0;
 }
 
 .hero-subtitle {
-  font-size: 0.6em;
-  text-transform: uppercase;
+  font-family: 'droid_serifitalic', Arial, sans-serif;
+  font-size: 0.8em;
   color: #8e9faf;
-  letter-spacing: 2px;
-  margin-bottom: 0;
 }
 
 .hero-des {
