@@ -196,12 +196,10 @@ h1, h2, h3 {
 }
 
 .hero-title {
-  font-family: 'Work Sans', Arial, sans-serif;
   text-transform: uppercase;
-  /* font-family: 'droid_serifbold', Arial, sans-serif !important; */
+  font-family: 'droid_serifregular', Arial, sans-serif !important;
   font-size: 2em;
-  letter-spacing: 4px;
-  font-weight: 400;
+  letter-spacing: 6px;
   margin: 0;
 }
 
